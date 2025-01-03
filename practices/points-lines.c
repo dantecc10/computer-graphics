@@ -25,5 +25,6 @@ void pinta(void){
 		glutDisplayFunc(pinta);
 		glutMainLoop();
 		return 0;
-		
+
 	}
+	
