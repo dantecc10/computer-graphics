@@ -22,7 +22,7 @@ void pinta(void){
 
 		inicializa();
 
-		
+	
 
 		glutDisplayFunc(pinta);
 		glutMainLoop();
