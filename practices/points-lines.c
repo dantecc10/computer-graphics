@@ -24,4 +24,3 @@ void pinta(void){
 		glutMainLoop();
 		return 0;
 	}
-	

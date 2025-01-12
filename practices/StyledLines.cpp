@@ -50,8 +50,6 @@ void pinta(void){
 	glVertex2i(100, 60);
 
 	glEnd();
-	
-	
 	glFlush();
 }
 	
