@@ -19,6 +19,7 @@ void pinta(void){
 		glutInit(&argc, argv);
 		glutCreateWindow("Mi primer programa");
 
+
 		inicializa();
 
 		glutDisplayFunc(pinta);
