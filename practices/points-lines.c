@@ -14,7 +14,6 @@ void pinta(void){
 	glFlush();
 }
 
-
 	
 	int main(int argc, char ** argv) {
 		glutInitWindowSize(400, 400);
