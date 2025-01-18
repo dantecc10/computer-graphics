@@ -13,6 +13,7 @@ void pinta(void){
 	glEnd();
 	glFlush();
 }
+
 	
 	int main(int argc, char ** argv) {
 		glutInitWindowSize(400, 400);
@@ -20,7 +21,7 @@ void pinta(void){
 		glutCreateWindow("Mi primer programa");
 
 		inicializa();
-		
+
 		glutDisplayFunc(pinta);
 		glutMainLoop();
 		return 0;
