@@ -70,7 +70,7 @@ void pinta(void){
 	int main(int argc, char ** argv) {
 		glutInitWindowSize(500, 500);
 		glutInit(&argc, argv);
-		glutCreateWindow("Mi primer programa");
+		glutCreateWindow("Dante Castelán Carpinteyro: Primera Actividad [Lapicera]");
 		
 		inicializa();
 		glutDisplayFunc(pinta);
