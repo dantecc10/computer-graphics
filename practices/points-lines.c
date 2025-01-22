@@ -27,5 +27,3 @@ void pinta(void){
 		return 0;
 
 	}
-
-	
