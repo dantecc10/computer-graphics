@@ -8,7 +8,6 @@ Triángulos
 
 glBegin(GL_TRIANGLES);
 
-
 glShadeMode(GL_FLAT);
 
 glLineWidth(4);
@@ -24,7 +23,6 @@ glColor3f(0, 0, 1);
 glVertex2i(200, 200);
 
 glEnd();
-
 
 glShadeMode(GL_SMOOTH);
 
@@ -42,12 +40,9 @@ glVertex2i(200, 200);
 
 glEnd();
 
-
-
-
 glBegin();
 
-p1:
+ p1:
 
 p2:
 
@@ -56,7 +51,5 @@ p3:
 p4;
 
 glEnd();
-
-
 
 glPolygonMode(GL_FRONT, GL_LINE);
