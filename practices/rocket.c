@@ -7,7 +7,7 @@ void inicializa(void) {
 
 void pinta(void){
 	glClear(GL_COLOR_BUFFER_BIT);
-	glBegin(GL_TRIANGLE_FAN);
+	glBegin(GL_TRIANGLE_FAN); // Une todos los puntos formando un cuadrado
 	glColor3f(1, 1, 1);
 	glVertex2i(300, 400);
 	glVertex2i(500, 400);
@@ -15,14 +15,14 @@ void pinta(void){
 	glVertex2i(300, 600);
 	glEnd();
 	
-	glBegin(GL_TRIANGLE_FAN);
+	glBegin(GL_TRIANGLE_FAN); // Une todos los puntos formando un cuadrado
 	glVertex2i(300, 190);
 	glVertex2i(500, 190);
 	glVertex2i(500, 390);
 	glVertex2i(300, 390);
 	glEnd();
 	
-	glBegin(GL_TRIANGLES);
+	glBegin(GL_TRIANGLES); // Genera triángulos
 	// Wings
 	glVertex2i(510, 340);
 	glVertex2i(510, 190);
@@ -33,7 +33,7 @@ void pinta(void){
 	glVertex2i(160, 190);
 	glEnd();
 	// Top
-	glBegin(GL_TRIANGLES);
+	glBegin(GL_TRIANGLES); // Genera triángulos
 	glColor3f(1, 0, 0);
 	glVertex2i(300, 610);
 	glVertex2i(500, 610);
