@@ -50,6 +50,6 @@ p3:
 
 p4;
 
-glEnd();
+ glEnd();
 
 glPolygonMode(GL_FRONT, GL_LINE);
