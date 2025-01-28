@@ -359,7 +359,6 @@ void pinta(void)
     glVertex2i(0, 400);
     glEnd();
 
-
     rabbit(); 
     // Raya
     glColor3f(0, 0, 0);
