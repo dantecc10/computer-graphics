@@ -231,7 +231,7 @@ void rabbit()
     glVertex2i(253, 220);
     glVertex2i(249, 225);
     glEnd();
-    
+
     // Ojos
     glColor3f(1, 1, 1);
     glPolygonMode(GL_FRONT, GL_FILL);
@@ -261,7 +261,7 @@ void rabbit()
     glVertex2i(313, 313);
     glVertex2i(318, 313);
     glEnd();
-    
+
     glColor3f(0, 0, 0);
     glBegin(GL_POLYGON);
     glVertex2i(319, 298);
@@ -269,38 +269,38 @@ void rabbit()
     glVertex2i(326, 305);
     glVertex2i(319, 305);
     glEnd();
-    
+
     glColor3f(1, 1, 1);
     glBegin(GL_POLYGON);
     glVertex2i(300, 275);
     glVertex2i(310, 269);
     glVertex2i(330, 269);
-    
+
     glVertex2i(330, 230);
     glVertex2i(300, 230);
     glEnd();
-    
+
     glBegin(GL_POLYGON);
     glVertex2i(300, 230);
     glVertex2i(320, 230);
     glVertex2i(320, 215);
     glVertex2i(300, 215);
     glEnd();
-    
+
     glColor3f(.6745, .4078, .5215);
     glBegin(GL_TRIANGLES);
     glVertex2i(300, 275);
     glVertex2i(315, 270);
     glVertex2i(300, 255);
     glEnd();
-    
+
     glColor3f(0, 0, 0);
     glBegin(GL_TRIANGLES);
     glVertex2i(300, 245);
     glVertex2i(320, 245);
     glVertex2i(300, 220);
     glEnd();
-    
+
     glColor3f(1, 1, 1);
     glBegin(GL_POLYGON);
     glVertex2i(300, 247);
@@ -308,7 +308,7 @@ void rabbit()
     glVertex2i(310, 230);
     glVertex2i(310, 247);
     glEnd();
-    
+
     // Orejas
     glColor3f(0.3882, 0.4039, 0.3333);
     glBegin(GL_POLYGON);
@@ -321,7 +321,7 @@ void rabbit()
     glVertex2i(240, 390);
     glVertex2i(250, 380);
     glEnd();
-    
+
     glBegin(GL_POLYGON);
     glVertex2i(320, 325);
     glVertex2i(330, 320);
@@ -348,7 +348,7 @@ void pinta(void)
     glVertex2i(600, 400);
     glVertex2i(300, 400);
     glEnd();
-    
+
     // Tierra
     glColor3f(.8156, .6, .3490);
     glPolygonMode(GL_FRONT, GL_FILL);
@@ -358,10 +358,10 @@ void pinta(void)
     glVertex2i(300, 400);
     glVertex2i(0, 400);
     glEnd();
- 
+
     rabbit();
-    // Raya 
-    glColor3f(0, 0, 0); 
+    // Raya
+    glColor3f(0, 0, 0);
     glPolygonMode(GL_FRONT, GL_FILL);
     glBegin(GL_POLYGON);
     glVertex2i(302, 0);
