@@ -361,7 +361,7 @@ void pinta(void)
 
     rabbit();
     // Raya
-    glColor3f(0, 0, 0);
+    glColor3f(0, 0, 0); 
     glPolygonMode(GL_FRONT, GL_FILL);
     glBegin(GL_POLYGON);
     glVertex2i(302, 0);
