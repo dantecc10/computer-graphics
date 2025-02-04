@@ -350,7 +350,7 @@ void pinta(void)
     glEnd();
     
     // Tierra
-    glColor3f(.8156, .6, .3490); 
+    glColor3f(.8156, .6, .3490);
     glPolygonMode(GL_FRONT, GL_FILL);
     glBegin(GL_POLYGON);
     glVertex2i(0, 0);
