@@ -4,8 +4,12 @@
             "name": "(gdb) Iniciar",
             "type": "cppdbg",
             "request": "launch",
-            "program": "Escriba el nombre del programa; por ejemplo, ${workspaceFolder}/a.out.",
-            "args": [],
+            "program": "${workspaceFolder}/practices/homework/dev.c",
+            "args": [
+                "lGL",
+                "lGLU",
+                "lglut",
+            ], // Argumentos del programa
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

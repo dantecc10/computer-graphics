@@ -254,6 +254,12 @@ void pinta(void){
 	tableChair(700, 460);
 	tableChair(1000, 460);
 	tableChair(1300, 460);
+
+	tableChair(100, 200);
+	tableChair(400, 200);
+	tableChair(700, 200);
+	tableChair(1000, 200);
+	tableChair(1300, 200);
 	// Termina salón de clases
 	glEnd();
 	glFlush();
