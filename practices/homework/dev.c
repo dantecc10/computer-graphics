@@ -141,7 +141,6 @@ void drawMountain(int a, int b, int x)
 void drawField(int a, int b, int x){
     glEnd();
     glBegin(GL_TRIANGLES);
-    int vertices[3][2] = {{0, 0}, {0, 0}, {0, 0}};
     int a_p[2] = {a, b},
     b_p[2] = {a + x, b},
     c_p[2] = {a + 2 * x, b},
@@ -163,10 +162,9 @@ void drawField(int a, int b, int x){
     s_p[2] = {a + 5 * x, b + 1.75 * x},
     t_p[2] = {a + 6.5 * x, b + 2 * x};
 
-    float color[3] = {0, 0, 0};
     // Triangle A, B, I
-    color = {0.035, 0.474, 0.0039};
-    vertices = {{a_p[0], a_p[1]}, {b_p[0], b_p[1]}, {i_p[0], i_p[1]}};
+    float color[3] = {0.035, 0.474, 0.0039};
+    int vertices[3][2] = {{a_p[0], a_p[1]}, {b_p[0], b_p[1]}, {i_p[0], i_p[1]}};
     drawTriangle(vertices, color);
     glEnd();
 }
