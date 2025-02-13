@@ -78,3 +78,9 @@ int main(int argc, char **argv)
     glutMainLoop();
     return 0;
 }
+
+// Dime los datos de entrada ideales para graficar x * sen(x)
+// 0 10 100 0 500 0 500
+
+//Esos datos me gustaron, pero sólo veo la parte derecha de la ecuación; dame los puntos para ver simétricamente la gráfica de x * sen(x)
+// -10 10 100 0 500 0 500
