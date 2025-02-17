@@ -11,18 +11,27 @@ void CurvaBezier(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
+    // Define los puntos de control (sólo se toca el primero y el último)
     float PuntosDeControl[4][3] = {
         {10.0, 10.0, 0.0},
         {200.0, 200.0, 0.0},
         {200.0, 100.0, 0.0},
         {100.0, 100.0, 0.0}};
 
-    glMap1f(GL_MAP1_VERTEX_3, 0.0, 1.0, 3, 4, *PuntosDeControl);
+    // Se activan las cruvas de Bezier con
+    glMap1f(GL_MAP1_VERTEX_3, 0.0, 1.0, 3, 4, *PuntosDeControl); // 0 < 
     glEnable(GL_MAP1_VERTEX_3);
+
+    // Cantidad de subintervalos
     glMapGrid1f(100, 0.0, 1.0);
+
     glColor3f(1.0, 0, 0);
     glLineWidth(4);
+
+    // Se evalúa la curva de Bezier
     glEvalMesh1(GL_LINE, 0, 100);
+
+    // Se desactivan las curvas de Bezier
     glDisable(GL_MAP1_VERTEX_3);
     glFlush();
 }

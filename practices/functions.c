@@ -16,6 +16,7 @@ void graficafuncion2dSubventana(void) {
     double dx, xp, yp;
     double *xi = new double[cpuntos + 1];
     double *yi = new double[cpuntos + 1];
+    double *yi2 = new double[cpuntos + 1];
     double miny, maxy;
     dx = (cs - ci) * 1.0 / cpuntos;
     glClear(GL_COLOR_BUFFER_BIT);
@@ -27,8 +28,8 @@ void graficafuncion2dSubventana(void) {
         // yi[i] = xi[i] * (log(xi[i]) / log(2));
         // yi[i] = pow(xi[i], 3);
         // yi[i] = pow(.5, xi[i]);
-        // yi[i] = cos(xi[i]);
-        yi[i] = exp(xi[i]);
+        yi[i] = cos(xi[i]);
+        // yi[i] = exp(xi[i]);
     }
 
     // Encuentra el valor mínimo y máximo de y
