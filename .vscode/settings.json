@@ -1,0 +1,4 @@
+{
+    "editor.guides.bracketPairs": true,
+    "razor.format.codeBlockBraceOnNextLine": false
+}
