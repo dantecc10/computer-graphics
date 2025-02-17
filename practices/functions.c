@@ -81,6 +81,5 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-
 // Dime los valores ideales para ejecutar el código
 // 0, 10, 100, 0, 500, 0, 500
