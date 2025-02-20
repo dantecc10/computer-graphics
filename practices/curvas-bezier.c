@@ -19,7 +19,7 @@ void CurvaBezier(void)
         {100.0, 100.0, 0.0}};
 
     // Se activan las cruvas de Bezier con
-    glMap1f(GL_MAP1_VERTEX_3, 0.0, 1.0, 3, 4, *PuntosDeControl); // 0 < 
+    glMap1f(GL_MAP1_VERTEX_3, 0.0, 1.0, 3, 4, *PuntosDeControl);
     glEnable(GL_MAP1_VERTEX_3);
 
     // Cantidad de subintervalos
