@@ -236,6 +236,7 @@ void Conejo(void)
         {176.0, 146.0, 0.0},
         {175.0, 150.0, 0.0}};
     //drawCurve(c17[0], c17[1], c17[2], c17[3]);
+    iDrawCurve(c17[0], c17[1], c17[2], c17[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Pata delantera secundaria
     float c18[4][3] = {
