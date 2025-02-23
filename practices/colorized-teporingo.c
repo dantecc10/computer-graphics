@@ -235,7 +235,7 @@ void Conejo(void)
         {168.0, 140.0, 0.0},
         {176.0, 146.0, 0.0},
         {175.0, 150.0, 0.0}};
-    drawCurve(c17[0], c17[1], c17[2], c17[3]);
+    //drawCurve(c17[0], c17[1], c17[2], c17[3]);
 
     // Reference: Pata delantera secundaria
     float c18[4][3] = {
