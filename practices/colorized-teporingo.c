@@ -77,20 +77,21 @@ void Conejo(void)
     // Polígonos complementarios de relleno
 
     // Reference: Mitad trasera del conejo
-    polygon4Filler((float[4][3]){{400, 600, 0}, {745.0, 420.0, 0.0},
-    {670.0, 145.0, 0.0}, {480.0, 125.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+    polygon4Filler((float[4][3]){{400, 600, 0}, {745.0, 420.0, 0.0}, {670.0, 145.0, 0.0}, {480.0, 125.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Pecho del conejo bajo cabeza
-    polygon4Filler((float[4][3]){{468.0, 170.0, 0.0}, {310.0, 155.0, 0.0},
-    {155.0, 390.0, 0.0}, {350.0, 440.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+    polygon4Filler((float[4][3]){{468.0, 170.0, 0.0}, {310.0, 155.0, 0.0}, {155.0, 390.0, 0.0}, {350.0, 440.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Pecho a pata delantera principal
-    polygon4Filler((float[4][3]){{155.0, 390.0, 0.0}, {245.0, 198.0, 0.0},
-    {308.0, 140.0, 0.0}, {310.0, 155.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+    polygon4Filler((float[4][3]){{155.0, 390.0, 0.0}, {245.0, 198.0, 0.0}, {308.0, 140.0, 0.0}, {310.0, 155.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Lomo-oreja a mandíbula a pata trasera a cola
-    polygon4Filler((float[4][3]){{400.0, 600.0, 0.0}, {350.0, 440.0, 0.0},
-    {468.0, 170.0, 0.0}, {745.0, 420.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+    polygon4Filler((float[4][3]){{400.0, 600.0, 0.0}, {350.0, 440.0, 0.0}, {468.0, 170.0, 0.0}, {745.0, 420.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Pata delantera secundaria baja
+    polygon4Filler((float[4][3]){{205.0, 130.0, 0.0}, {160.0, 119.0, 0.0}, {162.0, 130.0, 0.0}, {175.0, 150.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Pata delantera secundaria alta
 
     // Reference: Lomo del conejo
     float c1[4][3] = {
@@ -174,7 +175,7 @@ void Conejo(void)
         {225.0, 90.0, 0.0},
         {205.0, 105.0, 0.0},
         {215.0, 125.0, 0.0}};
-    //drawCurve(c10[0], c10[1], c10[2], c10[3]);
+    // drawCurve(c10[0], c10[1], c10[2], c10[3]);
     iDrawCurve(c10[0], c10[1], c10[2], c10[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Punta de la pata delantera principal
@@ -199,7 +200,7 @@ void Conejo(void)
         {150.0, 230.0, 0.0},
         {120.0, 330.0, 0.0},
         {155.0, 390.0, 0.0}};
-    //drawCurve(c13[0], c13[1], c13[2], c13[3]);
+    // drawCurve(c13[0], c13[1], c13[2], c13[3]);
     iDrawCurve(c13[0], c13[1], c13[2], c13[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Pata delantera secundaria
@@ -208,7 +209,7 @@ void Conejo(void)
         {235.0, 178.0, 0.0},
         {215.0, 130, 0.0},
         {205.0, 130.0, 0.0}};
-    //drawCurve(c14[0], c14[1], c14[2], c14[3]);
+    // drawCurve(c14[0], c14[1], c14[2], c14[3]);
     iDrawCurve(c14[0], c14[1], c14[2], c14[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Planta de la pata delantera secundaria
@@ -217,7 +218,7 @@ void Conejo(void)
         {190.0, 119.0, 0.0},
         {185.0, 116.0, 0.0},
         {160.0, 119.0, 0.0}};
-    //drawCurve(c15[0], c15[1], c15[2], c15[3]);
+    // drawCurve(c15[0], c15[1], c15[2], c15[3]);
     iDrawCurve(c15[0], c15[1], c15[2], c15[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Punta de la pata delantera secundaria
@@ -226,7 +227,7 @@ void Conejo(void)
         {158.0, 123.0, 0.0},
         {159.0, 127.0, 0.0},
         {162.0, 130.0, 0.0}};
-    //drawCurve(c16[0], c16[1], c16[2], c16[3]);
+    // drawCurve(c16[0], c16[1], c16[2], c16[3]);
     iDrawCurve(c16[0], c16[1], c16[2], c16[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva de la pata delantera secundaria
@@ -235,7 +236,7 @@ void Conejo(void)
         {168.0, 140.0, 0.0},
         {176.0, 146.0, 0.0},
         {175.0, 150.0, 0.0}};
-    //drawCurve(c17[0], c17[1], c17[2], c17[3]);
+    // drawCurve(c17[0], c17[1], c17[2], c17[3]);
     iDrawCurve(c17[0], c17[1], c17[2], c17[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Pata delantera secundaria
@@ -244,7 +245,7 @@ void Conejo(void)
         {178.0, 178.0, 0.0},
         {181.0, 206.0, 0.0},
         {185.0, 233.0, 0.0}};
-    drawCurve(c18[0], c18[1], c18[2], c18[3]);
+    //drawCurve(c18[0], c18[1], c18[2], c18[3]);
 
     // Reference: Mandíbula del conejo 1
     float c19[4][3] = {
