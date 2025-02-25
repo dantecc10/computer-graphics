@@ -227,6 +227,7 @@ void Conejo(void)
         {159.0, 127.0, 0.0},
         {162.0, 130.0, 0.0}};
     //drawCurve(c16[0], c16[1], c16[2], c16[3]);
+    iDrawCurve(c16[0], c16[1], c16[2], c16[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva de la pata delantera secundaria
     float c17[4][3] = {
