@@ -88,7 +88,9 @@ void Conejo(void)
     polygon4Filler((float[4][3]){{155.0, 390.0, 0.0}, {245.0, 198.0, 0.0},
     {308.0, 140.0, 0.0}, {310.0, 155.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
-    // R
+    // Reference: Lomo-oreja a mandíbula a pata trasera a cola
+    polygon4Filler((float[4][3]){{400.0, 600.0, 0.0}, {350.0, 440.0, 0.0},
+    {468.0, 170.0, 0.0}, {745.0, 420.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Lomo del conejo
     float c1[4][3] = {
