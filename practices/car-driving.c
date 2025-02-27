@@ -2,6 +2,8 @@
 
 #include <GL/glut.h>
 #include <math.h>
+#include <unistd.h>
+
 void inicializa(void)
 {
     glClearColor(0, 0, 0, 0.0);
@@ -51,9 +53,6 @@ void head()
     glEnd();
 
     glBegin(GL_LINES);
-    glVertex2i(328, 272);
-    glVertex2i(352, 272);
-
     glVertex2i(370, 273);
     glVertex2i(383, 278);
 
@@ -67,6 +66,18 @@ void head()
     glPointSize(2);
     glBegin(GL_POINTS);
     glVertex2i(340, 285);
+    glEnd();
+}
+
+void mouth(int x1, int y1, int x2, int y2, double c1, double c2, double c3)
+{
+    glColor3f(c1, c2, c3);
+    glPolygonMode(GL_FRONT, GL_LINE);
+    glBegin(GL_LINES);
+    // glVertex2i(328, 272);
+    // glVertex2i(352, 272);
+    glVertex2i(x1, y1);
+    glVertex2i(x2, y2);
     glEnd();
 }
 
@@ -100,13 +111,14 @@ void vehicle()
     glBegin(GL_LINES);
     glVertex2i(210, 169);
     glVertex2i(324, 169);
-    
+
     glVertex2i(332, 240);
     glVertex2i(342, 240);
     glEnd();
 }
 
-void wheels(){
+void wheels()
+{
     glColor3f(1.0, 1.0, 1.0);
     glPolygonMode(GL_FRONT, GL_LINE);
     glBegin(GL_POLYGON);
@@ -122,11 +134,19 @@ void pinta(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
     // Llamar funciones
-    head();
-    window();
-    vehicle();
-    wheels();
-    glFlush();
+    for (int i = 0; i < 100; i++)
+    {
+
+        usleep(500000);
+        glClear(GL_COLOR_BUFFER_BIT);
+        glFlush();
+        (i % 2 == 0) ? mouth(328, 272, 352, 272, 1.0, 1.0, 1.0) : mouth(338, 272, 350, 275, 1.0, 1.0, 1.0);
+        head();
+        window();
+        vehicle();
+        wheels();
+    }
+    //glFlush(); // La maestra dijo que le ponga un sólo flush
 }
 
 int main(int argc, char **argv)
