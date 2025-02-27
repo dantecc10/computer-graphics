@@ -74,8 +74,21 @@ void Conejo(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
+    // Polígonos complementarios de relleno
+
+    // Reference: Mitad trasera del conejo
     polygon4Filler((float[4][3]){{400, 600, 0}, {745.0, 420.0, 0.0},
     {670.0, 145.0, 0.0}, {480.0, 125.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Pecho del conejo bajo cabeza
+    polygon4Filler((float[4][3]){{468.0, 170.0, 0.0}, {310.0, 155.0, 0.0},
+    {155.0, 390.0, 0.0}, {350.0, 440.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Pecho a pata delantera principal
+    polygon4Filler((float[4][3]){{155.0, 390.0, 0.0}, {245.0, 198.0, 0.0},
+    {308.0, 140.0, 0.0}, {310.0, 155.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // R
 
     // Reference: Lomo del conejo
     float c1[4][3] = {
@@ -135,7 +148,7 @@ void Conejo(void)
         {430.0, 170.0, 0.0},
         {350.0, 140.0, 0.0},
         {310.0, 155.0, 0.0}};
-    drawCurve(c7[0], c7[1], c7[2], c7[3]);
+    iDrawCurve(c7[0], c7[1], c7[2], c7[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Músculo de la pata delantera principal
     float c8[4][3] = {
@@ -168,7 +181,7 @@ void Conejo(void)
         {229.0, 148.0, 0.0},
         {237.0, 160.0, 0.0},
         {245.0, 180.0, 0.0}};
-    drawCurve(c11[0], c11[1], c11[2], c11[3]);
+    iDrawCurve(c11[0], c11[1], c11[2], c11[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva unión de la pata del. prin. con pecho
     float c12[4][3] = {
