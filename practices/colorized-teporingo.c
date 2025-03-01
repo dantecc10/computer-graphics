@@ -160,6 +160,7 @@ void Conejo(void)
         {205.0, 105.0, 0.0},
         {215.0, 125.0, 0.0}};
     //drawCurve(c10[0], c10[1], c10[2], c10[3]);
+    iDrawCurve(c10[0], c10[1], c10[2], c10[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Punta de la pata delantera principal
     float c11[4][3] = {
@@ -167,7 +168,7 @@ void Conejo(void)
         {229.0, 148.0, 0.0},
         {237.0, 160.0, 0.0},
         {245.0, 180.0, 0.0}};
-    drawCurve(c11[0], c11[1], c11[2], c11[3]);
+    iDrawCurve(c11[0], c11[1], c11[2], c11[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva unión de la pata del. prin. con pecho
     float c12[4][3] = {
