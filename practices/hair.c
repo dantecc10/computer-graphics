@@ -56,6 +56,13 @@ void head()
     glVertex2i(210, 169);
     glVertex2i(324, 169);
 
+    // glVertex2i(370, 273);
+    // glVertex2i(383, 278);
+    // glVertex2i(367, 293);
+    // glVertex2i(380, 296);
+    // glVertex2i(359, 301);
+    // glVertex2i(372, 314);
+
     glVertex2i(332, 240);
     glVertex2i(342, 240);
     glEnd();
@@ -66,19 +73,22 @@ void head()
     glEnd();
 }
 
-// void hair()
-//{
-//     glColor3f(1.0, 1.0, 1.0);
-//     glPolygonMode(GL_FRONT, GL_LINE); // Aquí se asegura el modo contorno antes de comenzar
-//
-//     glBegin(GL_LINES);
-//     glVertex2i(210, 169);
-//     glVertex2i(324, 169);
-//
-//     glVertex2i(332, 240);
-//     glVertex2i(342, 240);
-//     glEnd();
-// }
+void hair(int enabled)
+{
+    if (!enabled) // if (enabled == 0)
+    {
+        return;
+    }
+    glColor3f(1.0, 1.0, 1.0);
+    glBegin(GL_LINES);
+    glVertex2i(370, 273);
+    glVertex2i(383, 278);
+    glVertex2i(367, 293);
+    glVertex2i(380, 296);
+    glVertex2i(359, 301);
+    glVertex2i(372, 314);
+    glEnd();
+}
 
 void mouth(int x1, int y1, int x2, int y2, double c1, double c2, double c3)
 {
@@ -128,21 +138,6 @@ void vehicle()
     glEnd();
 }
 
-void hair()
-{
-    glColor3f(1.0, 1.0, 1.0);
-    glBegin(GL_LINES);
-    glVertex2i(370, 273);
-    glVertex2i(383, 278);
-
-    glVertex2i(367, 293);
-    glVertex2i(380, 296);
-
-    glVertex2i(359, 301);
-    glVertex2i(372, 314);
-    glEnd();
-}
-
 void wheels()
 {
     glColor3f(1.0, 1.0, 1.0);
@@ -165,12 +160,12 @@ void pinta(void)
         usleep(500000);
         glClear(GL_COLOR_BUFFER_BIT);
         glFlush();
-        (i % 2 == 0) ? mouth(328, 272, 352, 272, 1.0, 1.0, 1.0) : mouth(338, 272, 350, 275, 1.0, 1.0, 1.0);
+        hair(i % 2 == 0);
+        (i % 2 == 0) ? mouth(338, 272, 350, 275, 1.0, 1.0, 1.0) : mouth(325, 270, 345, 270, 1.0, 1.0, 1.0);
         head();
         window();
         vehicle();
         wheels();
-        hair();
     }
     // glFlush(); // La maestra dijo que le ponga un sólo flush
 }
