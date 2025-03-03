@@ -152,7 +152,7 @@ void wheels()
 }
 
 void pinta(void)
-{
+{ 
     glClear(GL_COLOR_BUFFER_BIT);
     // Llamar funciones
     for (int i = 0; i < 100; i++)
