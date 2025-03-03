@@ -48,11 +48,34 @@ void iDrawCurve(float p0[3], float p1[3], float p2[3], float p3[3], int fill, GL
     glEnd();
 }
 
+void polygon4Filler(float points[4][3], GLfloat fillColor[3])
+{
+    glColor3f(fillColor[0], fillColor[1], fillColor[2]); // Set custom fill color
+    glBegin(GL_POLYGON);
+    for (int i = 0; i < 4; i++)
+    {
+        glVertex3f(points[i][0], points[i][1], points[i][2]);
+    }
+    glEnd();
+}
+
+void polygon3Filler(float points[3][3], GLfloat fillColor[3])
+{
+    glColor3f(fillColor[0], fillColor[1], fillColor[2]); // Set custom fill color
+    glBegin(GL_POLYGON);
+    for (int i = 0; i < 3; i++)
+    {
+        glVertex3f(points[i][0], points[i][1], points[i][2]);
+    }
+    glEnd();
+}
+
 void Conejo(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
-    
+    polygon4Filler((float[4][3]){{400, 600, 0}, {745.0, 420.0, 0.0},
+    {670.0, 145.0, 0.0}, {480.0, 125.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Lomo del conejo
     float c1[4][3] = {
@@ -78,7 +101,7 @@ void Conejo(void)
         {607.0, 125.0, 0.0},
         {533.0, 120.0, 0.0},
         {480.0, 125.0, 0.0}};
-    //drawCurve(c3[0], c3[1], c3[2], c3[3]);
+    // drawCurve(c3[0], c3[1], c3[2], c3[3]);
     iDrawCurve(c3[0], c3[1], c3[2], c3[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: [Área de garras] Punta de la pata trasera del conejo
@@ -87,7 +110,7 @@ void Conejo(void)
         {458.0, 160.0, 0.0},
         {465.0, 198.0, 0.0},
         {507.0, 205.0, 0.0}};
-    //drawCurve(c4[0], c4[1], c4[2], c4[3]);
+    // drawCurve(c4[0], c4[1], c4[2], c4[3]);
     iDrawCurve(c4[0], c4[1], c4[2], c4[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: [Curva] Parte superior de la pata trasera del conejo
@@ -160,7 +183,7 @@ void Conejo(void)
         {150.0, 230.0, 0.0},
         {120.0, 330.0, 0.0},
         {155.0, 390.0, 0.0}};
-    drawCurve(c13[0], c13[1], c13[2], c13[3]);
+    //drawCurve(c13[0], c13[1], c13[2], c13[3]);
 
     // Reference: Pata delantera secundaria
     float c14[4][3] = {
