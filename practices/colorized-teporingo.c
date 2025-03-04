@@ -51,7 +51,8 @@ void iDrawCurve(float p0[3], float p1[3], float p2[3], float p3[3], int fill, GL
 void Conejo(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(0, 0, 0);
+
+    
 
     // Reference: Lomo del conejo
     float c1[4][3] = {
@@ -87,6 +88,7 @@ void Conejo(void)
         {465.0, 198.0, 0.0},
         {507.0, 205.0, 0.0}};
     //drawCurve(c4[0], c4[1], c4[2], c4[3]);
+    iDrawCurve(c4[0], c4[1], c4[2], c4[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: [Curva] Parte superior de la pata trasera del conejo
     float c5[4][3] = {
