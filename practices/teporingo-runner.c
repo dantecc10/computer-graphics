@@ -48,6 +48,26 @@ void iDrawCurve(float p0[3], float p1[3], float p2[3], float p3[3], int fill, GL
     glEnd();
 }
 
+void polygon4Filler(float points[4][3], GLfloat fillColor[3])
+{
+    glBegin(GL_POLYGON);
+    for (int i = 0; i < 4; i++)
+    {
+        glVertex3f(points[i][0], points[i][1], points[i][2]);
+    }
+    glEnd();
+}
+
+void polygon3Filler(float points[3][3], GLfloat fillColor[3])
+{
+    glBegin(GL_POLYGON);
+    for (int i = 0; i < 3; i++)
+    {
+        glVertex3f(points[i][0], points[i][1], points[i][2]);
+    }
+    glEnd();
+}
+
 void Conejo(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -384,17 +404,17 @@ void Conejo(void)
         {310.0, 365.0, 0.0},
         {270.0, 350.0, 0.0},
         {215.0, 370.0, 0.0},
-        {200.0, 310.0, 0.0}};
+        {200.0, 300.0, 0.0}};
     drawCurve(c42[0], c42[1], c42[2], c42[3]);
 
     // Reference: Planta de la pata delantera secundaria
     float c43[4][3] = {
-        {200.0, 310.0, 0.0},
-        {190.0, 290.0, 0.0},
-        {185.0, 280.0, 0.0},
-        {160.0, 290.0, 0.0}};
+        {200.0, 300.0, 0.0},
+        {255.0, 280.0, 0.0},
+        {300.0, 330.0, 0.0},
+        {345.0, 310.0, 0.0}};
     drawCurve(c43[0], c43[1], c43[2], c43[3]);
-    
+
     glFlush();
 }
 
