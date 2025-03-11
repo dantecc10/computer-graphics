@@ -387,6 +387,12 @@ void Conejo(void)
         {200.0, 310.0, 0.0}};
     drawCurve(c42[0], c42[1], c42[2], c42[3]);
 
+    // Reference: Planta de la pata delantera secundaria
+    float c43[4][3] = {
+        {200.0, 310.0, 0.0},
+        {190.0, 290.0, 0.0},
+        {185.0, 280.0, 0.0},
+        {160.0, 290.0, 0.0}};
     glFlush();
 }
 
