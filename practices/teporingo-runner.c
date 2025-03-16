@@ -372,7 +372,11 @@ void Conejo(void)
     drawCurve(c40[0], c40[1], c40[2], c40[3]);
 
     // Reference: Garras de la pata trasera secundaria
-    
+    float c41[4][3] = {
+        {810.0, 200.0, 0.0},
+        {820.0, 190.0, 0.0},
+        {830.0, 180.0, 0.0},
+        {840.0, 170.0, 0.0}};
 
     glFlush();
 }
