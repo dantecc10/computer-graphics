@@ -363,7 +363,8 @@ void Conejo(void)
         {600.0, 288.0, 0.0}};
     drawCurve(c18[0], c18[1], c18[2], c18[3]);
     
-
+    // Reference: Pata trasera secundaria
+    
     glFlush();
 }
 
