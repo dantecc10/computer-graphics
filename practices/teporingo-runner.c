@@ -362,23 +362,7 @@ void Conejo(void)
         {640.0, 210.0, 0.0},
         {600.0, 288.0, 0.0}};
     drawCurve(c18[0], c18[1], c18[2], c18[3]);
-    /*
-        float c3[4][3] = {
-            {400.0, 600.0, 0.0},
-            {600.0, 615.0, 0.0},
-            {715.0, 600.0, 0.0},
-            {840.0, 500.0}};
-        drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
-        // iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
-        /*
-        // Reference: Cola del conejo
-        float c2[4][3] = {
-            {745.0, 420.0, 0.0},
-            {770.0, 350.0, 0.0},
-            {750.0, 200.0, 0.0},
-            {670.0, 145.0, 0.0}};
-        drawCurve(c2[0], c2[1], c2[2], c2[3]);
-            */
+    
 
     glFlush();
 }
