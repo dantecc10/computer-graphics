@@ -53,165 +53,6 @@ void Conejo(void)
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(0, 0, 0);
 
-    // Reference: Lomo del conejo
-    float c1[4][3] = {
-        {400.0, 600.0, 0.0},
-        {480.0, 635.0, 0.0},
-        {560.0, 600.0, 0.0},
-        {600.0, 575.0, 0.0}};
-    drawCurve(c1[0], c1[1], c1[2], c1[3]); // Display curve
-
-    // Reference: Curva del lomo del conejo
-    float c2[4][3] = {
-        {600.0, 575.0, 0.0},
-        {630.0, 545.0, 0.0},
-        {670.0, 545.0, 0.0},
-        {700.0, 548.0, 0.0}};
-    drawCurve(c2[0], c2[1], c2[2], c2[3]); // Display curve
-
-    // Reference: Lomo trasero del conejo
-    float c3[4][3] = {
-        {700.0, 548.0, 0.0},
-        {740.0, 560.0, 0.0},
-        {800.0, 545.0, 0.0},
-        {840.0, 520.0, 0.0}};
-    drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
-
-    // Reference: Cola del conejo
-    float c4[4][3] = {
-        {840.0, 520.0, 0.0},
-        {883.62, 494.99, 0.0},
-        {918.93, 447.84, 0.0},
-        {885.0, 335.0, 0.0}};
-    drawCurve(c4[0], c4[1], c4[2], c4[3]); // Display curve
-
-    // Reference: Pata trasera del conejo
-    float c5[4][3] = {
-        {880.0, 375.0, 0.0},
-        {885.0, 330.0, 0.0},
-        {910.0, 325.0, 0.0},
-        {905.0, 230.0, 0.0}};
-    drawCurve(c5[0], c5[1], c5[2], c5[3]); // Display curve
-
-    // Reference: Planta de la pata trasera del conejo
-    float c6[4][3] = {
-        {905.0, 230.0, 0.0},
-        {902.0, 202.0, 0.0},
-        {895.0, 150.0, 0.0},
-        {845.0, 115.0, 0.0}};
-    drawCurve(c6[0], c6[1], c6[2], c6[3]); // Display curve
-
-    // Reference: [Área de garras] Punta de la pata trasera del conejo
-    float c7[4][3] = {
-        {845.0, 225.0, 0.0},
-        {820.0, 198.0, 0.0},
-        {810.0, 165.0, 0.0},
-        {845.0, 115.0, 0.0}};
-    drawCurve(c7[0], c7[1], c7[2], c7[3]); // Display curve
-
-    // Reference: [Curva] Parte superior de la pata trasera del conejo
-    float c8[4][3] = {
-        {845.0, 225.0, 0.0},
-        {850.0, 278.0, 0.0},
-        {845.0, 292.0, 0.0},
-        {820.0, 310.0, 0.0}};
-    drawCurve(c8[0], c8[1], c8[2], c8[3]);
-
-    // Reference: Músculo de la pata trasera del conejo
-    float c9[4][3] = {
-        {820.0, 310.0, 0.0},
-        {780.0, 260.0, 0.0},
-        {670.0, 240.0, 0.0},
-        {620.0, 360.0, 0.0}};
-    drawCurve(c9[0], c9[1], c9[2], c9[3]);
-
-    // Reference: Músculo de la pata delantera principal
-    float c10[4][3] = {
-        {530.0, 400.0, 0.0},
-        {510.0, 344.0, 0.0},
-        {480.0, 286.0, 0.0},
-        {380.0, 230.0, 0.0}};
-    drawCurve(c10[0], c10[1], c10[2], c10[3]);
-
-    // Reference: Parte de la pata delantera principal
-    float c11[4][3] = {
-        {380.0, 230.0, 0.0},
-        {337.0, 210.0, 0.0},
-        {293.0, 200.0, 0.0},
-        {250.0, 210.0, 0.0}};
-    drawCurve(c11[0], c11[1], c11[2], c11[3]);
-
-    // Reference: Previo a pata delantera principal
-    float c12[4][3] = {
-        {400.0, 450.0, 0.0},
-        {370.0, 404.0, 0.0},
-        {360.0, 346.0, 0.0},
-        {360.0, 310.0, 0.0}};
-    drawCurve(c12[0], c12[1], c12[2], c12[3]);
-
-    float c13[4][3] = {
-        {360.0, 310.0, 0.0},
-        {330.0, 290.0, 0.0},
-        {300.0, 265.0, 0.0},
-        {270.0, 270.0, 0.0}};
-    drawCurve(c13[0], c13[1], c13[2], c13[3]);
-
-    float c14[4][3] = {
-        {270.0, 270.0, 0.0},
-        {230.0, 290.0, 0.0},
-        {170.0, 290.0, 0.0},
-        {150.0, 230.0, 0.0}};
-    drawCurve(c14[0], c14[1], c14[2], c14[3]);
-
-    // Reference: Parte de la pata delantera principal
-    float c15[4][3] = {
-        {150.0, 230.0, 0.0},
-        {178.0, 210.0, 0.0},
-        {217.0, 200.0, 0.0},
-        {250.0, 210.0, 0.0}};
-    drawCurve(c15[0], c15[1], c15[2], c15[3]);
-
-    // Reference: Vientre del conejo
-    float c16[4][3] = {
-        {662.0, 300.0, 0.0},
-        {540.0, 270.0, 0.0},
-        {500.0, 270.0, 0.0},
-        {455.0, 280.0, 0.0}};
-    drawCurve(c16[0], c16[1], c16[2], c16[3]);
-
-    // Reference: Cuello del conejo
-    float c17[4][3] = {
-        {360.0, 310.0, 0.0},
-        {340.0, 290.0, 0.0},
-        {310.0, 380.0, 0.0},
-        {290.0, 400.0, 0.0}};
-    drawCurve(c17[0], c17[1], c17[2], c17[3]);
-
-    // Reference: Músculo de la pata trasera secundaria del conejo
-    float c18[4][3] = {
-        {790.0, 250.0, 0.0},
-        {750.0, 220.0, 0.0},
-        {640.0, 210.0, 0.0},
-        {600.0, 288.0, 0.0}};
-    drawCurve(c18[0], c18[1], c18[2], c18[3]);
-    /*
-        float c3[4][3] = {
-            {400.0, 600.0, 0.0},
-            {600.0, 615.0, 0.0},
-            {715.0, 600.0, 0.0},
-            {840.0, 500.0}};
-        drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
-        // iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
-        /*
-        // Reference: Cola del conejo
-        float c2[4][3] = {
-            {745.0, 420.0, 0.0},
-            {770.0, 350.0, 0.0},
-            {750.0, 200.0, 0.0},
-            {670.0, 145.0, 0.0}};
-        drawCurve(c2[0], c2[1], c2[2], c2[3]);
-            */
-
     // Reference: Mandíbula del conejo 1
     float c19[4][3] = {
         {350.0, 440.0, 0.0},
@@ -379,6 +220,165 @@ void Conejo(void)
         {190.0, 489.32, 0.0},
         {200.0, 490.0, 0.0}};
     drawCurve(c39[0], c39[1], c39[2], c39[3]);
+
+    // Reference: Lomo del conejo
+    float c1[4][3] = {
+        {400.0, 600.0, 0.0},
+        {480.0, 635.0, 0.0},
+        {560.0, 600.0, 0.0},
+        {600.0, 575.0, 0.0}};
+    drawCurve(c1[0], c1[1], c1[2], c1[3]); // Display curve
+
+    // Reference: Curva del lomo del conejo
+    float c2[4][3] = {
+        {600.0, 575.0, 0.0},
+        {630.0, 545.0, 0.0},
+        {670.0, 545.0, 0.0},
+        {700.0, 548.0, 0.0}};
+    drawCurve(c2[0], c2[1], c2[2], c2[3]); // Display curve
+
+    // Reference: Lomo trasero del conejo
+    float c3[4][3] = {
+        {700.0, 548.0, 0.0},
+        {740.0, 560.0, 0.0},
+        {800.0, 545.0, 0.0},
+        {840.0, 520.0, 0.0}};
+    drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
+
+    // Reference: Cola del conejo
+    float c4[4][3] = {
+        {840.0, 520.0, 0.0},
+        {883.62, 494.99, 0.0},
+        {918.93, 447.84, 0.0},
+        {885.0, 335.0, 0.0}};
+    drawCurve(c4[0], c4[1], c4[2], c4[3]); // Display curve
+
+    // Reference: Pata trasera del conejo
+    float c5[4][3] = {
+        {880.0, 375.0, 0.0},
+        {885.0, 330.0, 0.0},
+        {910.0, 325.0, 0.0},
+        {905.0, 230.0, 0.0}};
+    drawCurve(c5[0], c5[1], c5[2], c5[3]); // Display curve
+
+    // Reference: Planta de la pata trasera del conejo
+    float c6[4][3] = {
+        {905.0, 230.0, 0.0},
+        {902.0, 202.0, 0.0},
+        {895.0, 150.0, 0.0},
+        {845.0, 115.0, 0.0}};
+    drawCurve(c6[0], c6[1], c6[2], c6[3]); // Display curve
+
+    // Reference: [Área de garras] Punta de la pata trasera del conejo
+    float c7[4][3] = {
+        {845.0, 225.0, 0.0},
+        {820.0, 198.0, 0.0},
+        {810.0, 165.0, 0.0},
+        {845.0, 115.0, 0.0}};
+    drawCurve(c7[0], c7[1], c7[2], c7[3]); // Display curve
+
+    // Reference: [Curva] Parte superior de la pata trasera del conejo
+    float c8[4][3] = {
+        {845.0, 225.0, 0.0},
+        {850.0, 278.0, 0.0},
+        {845.0, 292.0, 0.0},
+        {820.0, 310.0, 0.0}};
+    drawCurve(c8[0], c8[1], c8[2], c8[3]);
+
+    // Reference: Músculo de la pata trasera del conejo
+    float c9[4][3] = {
+        {820.0, 310.0, 0.0},
+        {780.0, 260.0, 0.0},
+        {670.0, 240.0, 0.0},
+        {620.0, 360.0, 0.0}};
+    drawCurve(c9[0], c9[1], c9[2], c9[3]);
+
+    // Reference: Músculo de la pata delantera principal
+    float c10[4][3] = {
+        {530.0, 400.0, 0.0},
+        {510.0, 344.0, 0.0},
+        {480.0, 286.0, 0.0},
+        {380.0, 230.0, 0.0}};
+    drawCurve(c10[0], c10[1], c10[2], c10[3]);
+
+    // Reference: Parte de la pata delantera principal
+    float c11[4][3] = {
+        {380.0, 230.0, 0.0},
+        {337.0, 210.0, 0.0},
+        {293.0, 200.0, 0.0},
+        {250.0, 210.0, 0.0}};
+    drawCurve(c11[0], c11[1], c11[2], c11[3]);
+
+    // Reference: Previo a pata delantera principal
+    float c12[4][3] = {
+        {400.0, 450.0, 0.0},
+        {370.0, 404.0, 0.0},
+        {360.0, 346.0, 0.0},
+        {360.0, 310.0, 0.0}};
+    drawCurve(c12[0], c12[1], c12[2], c12[3]);
+
+    float c13[4][3] = {
+        {360.0, 310.0, 0.0},
+        {330.0, 290.0, 0.0},
+        {300.0, 265.0, 0.0},
+        {270.0, 270.0, 0.0}};
+    drawCurve(c13[0], c13[1], c13[2], c13[3]);
+
+    float c14[4][3] = {
+        {270.0, 270.0, 0.0},
+        {230.0, 290.0, 0.0},
+        {170.0, 290.0, 0.0},
+        {150.0, 230.0, 0.0}};
+    drawCurve(c14[0], c14[1], c14[2], c14[3]);
+
+    // Reference: Parte de la pata delantera principal
+    float c15[4][3] = {
+        {150.0, 230.0, 0.0},
+        {178.0, 210.0, 0.0},
+        {217.0, 200.0, 0.0},
+        {250.0, 210.0, 0.0}};
+    drawCurve(c15[0], c15[1], c15[2], c15[3]);
+
+    // Reference: Vientre del conejo
+    float c16[4][3] = {
+        {662.0, 300.0, 0.0},
+        {540.0, 270.0, 0.0},
+        {500.0, 270.0, 0.0},
+        {455.0, 280.0, 0.0}};
+    drawCurve(c16[0], c16[1], c16[2], c16[3]);
+
+    // Reference: Cuello del conejo
+    float c17[4][3] = {
+        {360.0, 310.0, 0.0},
+        {340.0, 290.0, 0.0},
+        {310.0, 380.0, 0.0},
+        {290.0, 400.0, 0.0}};
+    drawCurve(c17[0], c17[1], c17[2], c17[3]);
+
+    // Reference: Músculo de la pata trasera secundaria del conejo
+    float c18[4][3] = {
+        {790.0, 250.0, 0.0},
+        {750.0, 220.0, 0.0},
+        {640.0, 210.0, 0.0},
+        {600.0, 288.0, 0.0}};
+    drawCurve(c18[0], c18[1], c18[2], c18[3]);
+    /*
+        float c3[4][3] = {
+            {400.0, 600.0, 0.0},
+            {600.0, 615.0, 0.0},
+            {715.0, 600.0, 0.0},
+            {840.0, 500.0}};
+        drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
+        // iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
+        /*
+        // Reference: Cola del conejo
+        float c2[4][3] = {
+            {745.0, 420.0, 0.0},
+            {770.0, 350.0, 0.0},
+            {750.0, 200.0, 0.0},
+            {670.0, 145.0, 0.0}};
+        drawCurve(c2[0], c2[1], c2[2], c2[3]);
+            */
 
     glFlush();
 }
