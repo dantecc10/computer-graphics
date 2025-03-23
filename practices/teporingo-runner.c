@@ -173,7 +173,7 @@ void Conejo(void)
 
     // Reference: Vientre del conejo
     float c16[4][3] = {
-        {665.0, 300.0, 0.0},
+        {662.0, 300.0, 0.0},
         {540.0, 270.0, 0.0},
         {500.0, 270.0, 0.0},
         {455.0, 280.0, 0.0}};
@@ -187,6 +187,13 @@ void Conejo(void)
         {290.0, 400.0, 0.0}};
     drawCurve(c17[0], c17[1], c17[2], c17[3]);
 
+    // Reference: Músculo de la pata trasera secundaria del conejo
+    float c18[4][3] = {
+        {800.0, 210.0, 0.0},
+        {760.0, 160.0, 0.0},
+        {650.0, 140.0, 0.0},
+        {600.0, 260.0, 0.0}};
+    drawCurve(c18[0], c18[1], c18[2], c18[3]);
     /*
         float c3[4][3] = {
             {400.0, 600.0, 0.0},
