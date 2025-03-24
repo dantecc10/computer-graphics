@@ -1,11 +1,12 @@
 #include <GL/glut.h>
 #include <math.h>
+#include <unistd.h>
 
 void initialize(void)
 {
     glClearColor(0, 0, 0, 0.0);
     glMatrixMode(GL_PROJECTION);
-    gluOrtho2D(0, 1000, 0, 1000);
+    gluOrtho2D(0, 700, 0, 700);
 }
 
 void circle(float posx, float posy, float radius)
@@ -94,19 +95,27 @@ void paint(void)
     window();
     vehicle();
     wheels();
-    glFlush();
 }
+
 void show(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glTranslated(255, -70, 0);
+    glTranslated(200, -135, 0);
     paint();
-    glFlush();
+    // Recorrer 100 pixeles a la izquierda en 4 pasos cada 2 segundos
+    for (int i = 0; i < 50; i++)
+    {
+        usleep(500000);
+        glClear(GL_COLOR_BUFFER_BIT);
+        glTranslated(-2, 0, 0);
+        paint();
+        glFlush();
+    }
 }
 
 int main(int argc, char **argv)
 {
-    glutInitWindowSize(1000, 1000);
+    glutInitWindowSize(700, 700);
     glutInit(&argc, argv);
     glutCreateWindow("Castelán Carpinteyro Dante - Carro");
     glutInitWindowPosition(400, 100);
