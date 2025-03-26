@@ -116,7 +116,7 @@ void Conejo(void)
         {845.0, 292.0, 0.0},
         {820.0, 310.0, 0.0}};
     drawCurve(c8[0], c8[1], c8[2], c8[3]);
-    
+
     // Reference: Músculo de la pata trasera del conejo
     float c9[4][3] = {
         {820.0, 310.0, 0.0},
@@ -125,24 +125,45 @@ void Conejo(void)
         {650.0, 370.0, 0.0}};
     drawCurve(c9[0], c9[1], c9[2], c9[3]);
 
-    // Reference:
-/*
-    float c3[4][3] = {
-        {400.0, 600.0, 0.0},
-        {600.0, 615.0, 0.0},
-        {715.0, 600.0, 0.0},
-        {840.0, 500.0}};
-    drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
-    // iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
+    // Reference: Músculo de la pata delantera principal
+    float c10[4][3] = {
+        {530.0, 400.0, 0.0},
+        {510.0, 344.0, 0.0},
+        {480.0, 286.0, 0.0},
+        {380.0, 230, 0.0}};
+    drawCurve(c10[0], c10[1], c10[2], c10[3]);
+
+    // Reference: Parte de la pata delantera principal
+    float c11[4][3] = {
+        {380.0, 230.0, 0.0},
+        {337.0, 210.0, 0.0},
+        {293.0, 200.0, 0.0},
+        {250.0, 210.0, 0.0}};
+    drawCurve(c11[0], c11[1], c11[2], c11[3]);
+
+    float c12[4][3] = {
+        {530.0, 400.0, 0.0},
+        {510.0, 344.0, 0.0},
+        {480.0, 286.0, 0.0},
+        {380.0, 230, 0.0}};
+    drawCurve(c12[0], c12[1], c12[2], c12[3]);
     /*
-    // Reference: Cola del conejo
-    float c2[4][3] = {
-        {745.0, 420.0, 0.0},
-        {770.0, 350.0, 0.0},
-        {750.0, 200.0, 0.0},
-        {670.0, 145.0, 0.0}};
-    drawCurve(c2[0], c2[1], c2[2], c2[3]);
-        */
+        float c3[4][3] = {
+            {400.0, 600.0, 0.0},
+            {600.0, 615.0, 0.0},
+            {715.0, 600.0, 0.0},
+            {840.0, 500.0}};
+        drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
+        // iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
+        /*
+        // Reference: Cola del conejo
+        float c2[4][3] = {
+            {745.0, 420.0, 0.0},
+            {770.0, 350.0, 0.0},
+            {750.0, 200.0, 0.0},
+            {670.0, 145.0, 0.0}};
+        drawCurve(c2[0], c2[1], c2[2], c2[3]);
+            */
 
     // Reference: Mandíbula del conejo 1
     float c19[4][3] = {
