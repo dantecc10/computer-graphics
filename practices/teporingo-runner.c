@@ -103,7 +103,7 @@ void Conejo(void)
 
     // Reference: [Área de garras] Punta de la pata trasera del conejo
     float c7[4][3] = {
-        {895.0, 280.0, 0.0},
+        {845.0, 280.0, 0.0},
         {897.0, 252.0, 0.0},
         {890.0, 200.0, 0.0},
         {840.0, 180.0, 0.0}};
