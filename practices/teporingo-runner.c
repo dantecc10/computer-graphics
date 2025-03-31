@@ -103,10 +103,10 @@ void Conejo(void)
 
     // Reference: [Área de garras] Punta de la pata trasera del conejo
     float c7[4][3] = {
-        {840.0, 180.0, 0.0},
-        {820.0, 160.0, 0.0},
-        {810.0, 150.0, 0.0},
-        {800.0, 140.0, 0.0}};
+        {895.0, 280.0, 0.0},
+        {897.0, 252.0, 0.0},
+        {890.0, 200.0, 0.0},
+        {840.0, 180.0, 0.0}};
     drawCurve(c7[0], c7[1], c7[2], c7[3]); // Display curve
 /*
     float c3[4][3] = {
