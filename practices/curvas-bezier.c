@@ -4,7 +4,7 @@ void init(void)
 {
     glClearColor(1, 1, 1, 0);
     glMatrixMode(GL_PROJECTION);
-    gluOrtho2D(0, 500, 0, 500);
+    gluOrtho2D(0, 800, 0, 800);
 }
 
 // Dibuja una curva de Bézier a partir de 4 puntos de control
@@ -128,7 +128,7 @@ int main(int argc, char **argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(500, 500);
+    glutInitWindowSize(800, 800);
     glutInitWindowPosition(1600, 0);
     glutCreateWindow("Curva de Bezier");
     init();
