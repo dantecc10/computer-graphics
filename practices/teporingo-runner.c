@@ -110,7 +110,6 @@ void Conejo(void)
     drawCurve(c7[0], c7[1], c7[2], c7[3]); // Display curve
 
     
-
     
 /*
     float c3[4][3] = {
