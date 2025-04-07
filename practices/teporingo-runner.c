@@ -80,10 +80,36 @@ void Conejo(void)
     // Reference: Cola del conejo
     float c4[4][3] = {
         {830.0, 520.0, 0.0},
-        {893.62, 494.99, 0.0},
-        {938.93, 447.84, 0.0},
-        {0.0, 350.0, 0.0}};
+        {883.62, 494.99, 0.0},
+        {918.93, 447.84, 0.0},
+        {890.0, 340.0, 0.0}};
     drawCurve(c4[0], c4[1], c4[2], c4[3]); // Display curve
+
+    // Reference: Pata trasera del conejo
+    float c5[4][3] = {
+        {880.0, 375.0, 0.0},
+        {885.0, 330.0, 0.0},
+        {889.0, 325.0, 0.0},
+        {895.0, 280.0, 0.0}};
+    drawCurve(c5[0], c5[1], c5[2], c5[3]); // Display curve
+
+    // Reference: Planta de la pata trasera del conejo
+    float c6[4][3] = {
+        {895.0, 280.0, 0.0},
+        {897.0, 252.0, 0.0},
+        {890.0, 200.0, 0.0},
+        {840.0, 180.0, 0.0}};
+    drawCurve(c6[0], c6[1], c6[2], c6[3]); // Display curve
+
+    // Reference: [Área de garras] Punta de la pata trasera del conejo
+    float c7[4][3] = {
+        {840.0, 180.0, 0.0},
+        {820.0, 160.0, 0.0},
+        {810.0, 150.0, 0.0},
+        {800.0, 140.0, 0.0}};
+    drawCurve(c7[0], c7[1], c7[2], c7[3]); // Display curve
+
+    
 
     
 /*
