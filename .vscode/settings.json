@@ -3,6 +3,7 @@
     "razor.format.codeBlockBraceOnNextLine": false,
     "files.associations": {
         "*.embeddedhtml": "html",
-        "ROTATION.C": "cpp"
+        "ROTATION.C": "cpp",
+        "random": "c"
     }
 }
