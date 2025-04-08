@@ -61,6 +61,7 @@ void Conejo(void)
         {600.0, 550.0, 0.0}};
     drawCurve(c1[0], c1[1], c1[2], c1[3]); // Display curve
 
+    // Reference: Curva del lomo del conejo
     float c2[4][3] = {
         {600.0, 550.0, 0.0},
         {666.0, 525.0, 0.0},
@@ -68,18 +69,20 @@ void Conejo(void)
         {700.0, 528.0, 0.0}};
     drawCurve(c2[0], c2[1], c2[2], c2[3]); // Display curve
 
+    // Reference: Lomo trasero del conejo
     float c3[4][3] = {
         {700.0, 528.0, 0.0},
         {740.0, 530.0, 0.0},
         {800.0, 535.0, 0.0},
-        {850.0, 530.0, 0.0}};
+        {830.0, 520.0, 0.0}};
     drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
 
+    // Reference: Cola del conejo
     float c4[4][3] = {
-        {850.0, 530.0, 0.0},
-        {903.62, 504.99, 0.0},
-        {918.93, 447.84, 0.0},
-        {815.0, 399.37, 0.0}};
+        {830.0, 520.0, 0.0},
+        {893.62, 494.99, 0.0},
+        {938.93, 447.84, 0.0},
+        {0.0, 350.0, 0.0}};
     drawCurve(c4[0], c4[1], c4[2], c4[3]); // Display curve
 
     
