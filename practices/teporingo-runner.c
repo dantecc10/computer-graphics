@@ -4,7 +4,7 @@ void init(void)
 {
     glClearColor(1, 1, 1, 0);
     glMatrixMode(GL_PROJECTION);
-    gluOrtho2D(0, 800, 0, 800);
+    gluOrtho2D(0, 1000, 0, 800);
 }
 
 // Dibuja una curva de Bézier a partir de 4 puntos de control
@@ -52,6 +52,38 @@ void Conejo(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(0, 0, 0);
+
+    // Reference: Lomo del conejo
+    float c1[4][3] = {
+        {400.0, 600.0, 0.0},
+        {460.0, 615.0, 0.0},
+        {520.0, 600.0, 0.0},
+        {600.0, 550.0, 0.0}};
+    drawCurve(c1[0], c1[1], c1[2], c1[3]); // Display curve
+
+    float c2[4][3] = {
+        {600.0, 550.0, 0.0},
+        {666.0, 535.0, 0.0},
+        {684.0, 535.0, 0.0},
+        {700.0, 540.0, 0.0}};
+    drawCurve(c2[0], c2[1], c2[2], c2[3]); // Display curve
+/*
+    float c3[4][3] = {
+        {400.0, 600.0, 0.0},
+        {600.0, 615.0, 0.0},
+        {715.0, 600.0, 0.0},
+        {840.0, 500.0}};
+    drawCurve(c3[0], c3[1], c3[2], c3[3]); // Display curve
+    // iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
+    /*
+    // Reference: Cola del conejo
+    float c2[4][3] = {
+        {745.0, 420.0, 0.0},
+        {770.0, 350.0, 0.0},
+        {750.0, 200.0, 0.0},
+        {670.0, 145.0, 0.0}};
+    drawCurve(c2[0], c2[1], c2[2], c2[3]);
+        */
 
     // Reference: Mandíbula del conejo 1
     float c19[4][3] = {
@@ -220,6 +252,7 @@ void Conejo(void)
         {190.0, 489.32, 0.0},
         {200.0, 490.0, 0.0}};
     drawCurve(c39[0], c39[1], c39[2], c39[3]);
+
     glFlush();
 }
 
@@ -227,7 +260,7 @@ int main(int argc, char **argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(800, 800);
+    glutInitWindowSize(1000, 800);
     glutInitWindowPosition(1600, 0);
     glutCreateWindow("Curva de Bezier");
     init();
