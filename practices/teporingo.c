@@ -278,6 +278,7 @@ void CurvaBezier(void)
         {335.0, 735.0, 0.0},
         {422.0, 730.0, 0.0}};
     drawCurve(c28[0], c28[1], c28[2], c28[3]);
+    
 
     glFlush();
 }
