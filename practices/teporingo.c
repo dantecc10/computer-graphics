@@ -61,7 +61,7 @@ void CurvaBezier(void)
         {715.0, 500.0, 0.0},
         {745.0, 420.0, 0.0}};
     drawCurve(c1[0], c1[1], c1[2], c1[3]);                                 // Display curve
-    iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
+    //iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
 
     // Reference: Cola del conejo
     float c2[4][3] = {
