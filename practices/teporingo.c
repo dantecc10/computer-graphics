@@ -41,7 +41,7 @@ void iDrawCurve(float p0[3], float p1[3], float p2[3], float p3[3], int fill, GL
 
     glColor3f(0, 0, 0); // Default line color
     glBegin(GL_LINE_STRIP);
-    for (int i = 0; i <= 120; i++)
+    for (int i = 0; i <= 100; i++)
     {
         glEvalCoord1f((GLfloat)i / 100.0);
     }
