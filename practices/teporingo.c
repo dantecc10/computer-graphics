@@ -41,7 +41,7 @@ void iDrawCurve(float p0[3], float p1[3], float p2[3], float p3[3], int fill, GL
 
     glColor3f(0, 0, 0); // Default line color
     glBegin(GL_LINE_STRIP);
-    for (int i = 0; i <= 100; i++)
+    for (int i = 0; i <= 120; i++)
     {
         glEvalCoord1f((GLfloat)i / 100.0);
     }
@@ -101,7 +101,7 @@ void CurvaBezier(void)
         {530.0, 260.0, 0.0},
         {530.0, 325.0, 0.0},
         {585.0, 390.0, 0.0}};
-    drawCurve(c6[0], c6[1], c6[2], c6[3]); 
+    drawCurve(c6[0], c6[1], c6[2], c6[3]);
 
     // Reference_ Vientre del conejo
     float c7[4][3] = {
