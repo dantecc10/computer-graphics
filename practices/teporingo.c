@@ -54,7 +54,7 @@ void CurvaBezier(void)
     glColor3f(0, 0, 0);
     glLineWidth(3);
 
-    // Referencia: Lomo del conejo
+    // Reference: Lomo del conejo
     float c1[4][3] = {
         {400.0, 600.0, 0.0},
         {600.0, 615.0, 0.0},
@@ -71,7 +71,7 @@ void CurvaBezier(void)
         {670.0, 145.0, 0.0}};
     drawCurve(c2[0], c2[1], c2[2], c2[3]);
 
-    // Referencia: Planta de la pata trasera del conejo
+    // Reference: Planta de la pata trasera del conejo
     float c3[4][3] = {
         {670.0, 145.0, 0.0},
         {607.0, 125.0, 0.0},
@@ -79,7 +79,7 @@ void CurvaBezier(void)
         {480.0, 125.0, 0.0}};
     drawCurve(c3[0], c3[1], c3[2], c3[3]);
 
-    // Referencia: [Área de garras] Punta de la pata trasera del conejo
+    // Reference: [Área de garras] Punta de la pata trasera del conejo
     float c4[4][3] = {
         {480.0, 125.0, 0.0},
         {458.0, 160.0, 0.0},
@@ -87,7 +87,7 @@ void CurvaBezier(void)
         {507.0, 205.0, 0.0}};
     drawCurve(c4[0], c4[1], c4[2], c4[3]);
 
-    // Referencia: [Curva] Parte superior de la pata trasera del conejo
+    // Reference: [Curva] Parte superior de la pata trasera del conejo
     float c5[4][3] = {
         {507.0, 205.0, 0.0},
         {538.0, 210.0, 0.0},
@@ -95,7 +95,7 @@ void CurvaBezier(void)
         {600.0, 180.0, 0.0}};
     drawCurve(c5[0], c5[1], c5[2], c5[3]);
 
-    // Referencia: Pierna del conejo
+    // Reference: Pierna del conejo
     float c6[4][3] = {
         {600.0, 180.0, 0.0},
         {530.0, 260.0, 0.0},
@@ -103,7 +103,7 @@ void CurvaBezier(void)
         {585.0, 390.0, 0.0}};
     drawCurve(c6[0], c6[1], c6[2], c6[3]);
 
-    // Referencia_ Vientre del conejo
+    // Reference_ Vientre del conejo
     float c7[4][3] = {
         {468.0, 170.0, 0.0},
         {430.0, 170.0, 0.0},
@@ -111,7 +111,7 @@ void CurvaBezier(void)
         {310.0, 155.0, 0.0}};
     drawCurve(c7[0], c7[1], c7[2], c7[3]);
 
-    // Referencia: Músculo de la pata delantera principal
+    // Reference: Músculo de la pata delantera principal
     float c8[4][3] = {
         {385.0, 300.0, 0.0},
         {362.0, 265.0, 0.0},
@@ -119,7 +119,7 @@ void CurvaBezier(void)
         {320.0, 220.0, 0.0}};
     drawCurve(c8[0], c8[1], c8[2], c8[3]);
 
-    // Referencia: Músculo-pata delantera principal
+    // Reference: Músculo-pata delantera principal
     float c9[4][3] = {
         {320.0, 220.0, 0.0},
         {317.0, 186.0, 0.0},
@@ -127,7 +127,7 @@ void CurvaBezier(void)
         {308.0, 140.0, 0.0}};
     drawCurve(c9[0], c9[1], c9[2], c9[3]);
 
-    // Referencia: Planta de la pata delantera principal
+    // Reference: Planta de la pata delantera principal
     float c10[4][3] = {
         {308.0, 140.0, 0.0},
         {225.0, 90.0, 0.0},
@@ -135,7 +135,7 @@ void CurvaBezier(void)
         {215.0, 125.0, 0.0}};
     drawCurve(c10[0], c10[1], c10[2], c10[3]);
 
-    // Referencia: Punta de la pata delantera principal
+    // Reference: Punta de la pata delantera principal
     float c11[4][3] = {
         {215.0, 125.0, 0.0},
         {229.0, 148.0, 0.0},
@@ -143,7 +143,7 @@ void CurvaBezier(void)
         {245.0, 180.0, 0.0}};
     drawCurve(c11[0], c11[1], c11[2], c11[3]);
 
-    // Referencia: Curva unión de la pata del. prin. con pecho
+    // Reference: Curva unión de la pata del. prin. con pecho
     float c12[4][3] = {
         {245.0, 180.0, 0.0},
         {247.0, 186.0, 0.0},
@@ -151,7 +151,7 @@ void CurvaBezier(void)
         {245.0, 198.0, 0.0}};
     drawCurve(c12[0], c12[1], c12[2], c12[3]);
 
-    // Referencia: Pecho del conejo
+    // Reference: Pecho del conejo
     float c13[4][3] = {
         {245.0, 198.0, 0.0},
         {150.0, 230.0, 0.0},
@@ -159,7 +159,7 @@ void CurvaBezier(void)
         {155.0, 390.0, 0.0}};
     drawCurve(c13[0], c13[1], c13[2], c13[3]);
 
-    // Referencia: Pata delantera secundaria
+    // Reference: Pata delantera secundaria
     float c14[4][3] = {
         {245.0, 198.0, 0.0},
         {235.0, 178.0, 0.0},
@@ -167,7 +167,7 @@ void CurvaBezier(void)
         {205.0, 130.0, 0.0}};
     drawCurve(c14[0], c14[1], c14[2], c14[3]);
 
-    // Referencia: Planta de la pata delantera secundaria
+    // Reference: Planta de la pata delantera secundaria
     float c15[4][3] = {
         {205.0, 130.0, 0.0},
         {190.0, 119.0, 0.0},
@@ -175,7 +175,7 @@ void CurvaBezier(void)
         {160.0, 119.0, 0.0}};
     drawCurve(c15[0], c15[1], c15[2], c15[3]);
 
-    // Referencia: Punta de la pata delantera secundaria
+    // Reference: Punta de la pata delantera secundaria
     float c16[4][3] = {
         {160.0, 119.0, 0.0},
         {158.0, 123.0, 0.0},
@@ -183,7 +183,7 @@ void CurvaBezier(void)
         {162.0, 130.0, 0.0}};
     drawCurve(c16[0], c16[1], c16[2], c16[3]);
 
-    // Referencia: Curva de la pata delantera secundaria
+    // Reference: Curva de la pata delantera secundaria
     float c17[4][3] = {
         {162.0, 130.0, 0.0},
         {168.0, 140.0, 0.0},
@@ -191,7 +191,7 @@ void CurvaBezier(void)
         {175.0, 150.0, 0.0}};
     drawCurve(c17[0], c17[1], c17[2], c17[3]);
 
-    // Referencia: Pata delantera secundaria
+    // Reference: Pata delantera secundaria
     float c18[4][3] = {
         {175.0, 150.0, 0.0},
         {178.0, 178.0, 0.0},
@@ -199,7 +199,7 @@ void CurvaBezier(void)
         {185.0, 233.0, 0.0}};
     drawCurve(c18[0], c18[1], c18[2], c18[3]);
 
-    // Referencia: Mandíbula del conejo 1
+    // Reference: Mandíbula del conejo 1
     float c19[4][3] = {
         {350.0, 440.0, 0.0},
         {320.0, 400.0, 0.0},
@@ -207,7 +207,7 @@ void CurvaBezier(void)
         {150.0, 390.0, 0.0}};
     drawCurve(c19[0], c19[1], c19[2], c19[3]);
 
-    // Referencia: Mandíbula del conejo 2
+    // Reference: Mandíbula del conejo 2
     float c20[4][3] = {
         {150.0, 390.0, 0.0},
         {110.0, 400.0, 0.0},
@@ -215,7 +215,7 @@ void CurvaBezier(void)
         {75.0, 450.0, 0.0}};
     drawCurve(c20[0], c20[1], c20[2], c20[3]);
 
-    // Referencia: Nariz (externo)
+    // Reference: Nariz (externo)
     float c21[4][3] = {
         {75.0, 450.0, 0.0},
         {70.0, 460.0, 0.0},
@@ -223,7 +223,7 @@ void CurvaBezier(void)
         {90.0, 480.0, 0.0}};
     drawCurve(c21[0], c21[1], c21[2], c21[3]);
 
-    // Referencia: Nariz (interno)
+    // Reference: Nariz (interno)
     float c22[4][3] = {
         {75.0, 450.0, 0.0},
         {85.0, 460.0, 0.0},
@@ -231,7 +231,7 @@ void CurvaBezier(void)
         {90.0, 480.0, 0.0}};
     drawCurve(c22[0], c22[1], c22[2], c22[3]);
 
-    // Referencia: Nariz a la cabeza
+    // Reference: Nariz a la cabeza
     float c23[4][3] = {
         {90.0, 480.0, 0.0},
         {95.0, 485.0, 0.0},
@@ -239,7 +239,7 @@ void CurvaBezier(void)
         {150.0, 570.0, 0.0}};
     drawCurve(c23[0], c23[1], c23[2], c23[3]);
 
-    // Referencia: Curva de la cabeza
+    // Reference: Curva de la cabeza
     float c24[4][3] = {
         {150.0, 570.0, 0.0},
         {170.0, 600.0, 0.0},
@@ -247,7 +247,7 @@ void CurvaBezier(void)
         {300.0, 610.0, 0.0}};
     drawCurve(c24[0], c24[1], c24[2], c24[3]);
 
-    // Referencia: Curva 1 de la oreja principal
+    // Reference: Curva 1 de la oreja principal
     float c25[4][3] = {
         {300.0, 590.0, 0.0},
         {280.0, 670.0, 0.0},
@@ -255,7 +255,7 @@ void CurvaBezier(void)
         {430.0, 750.0, 0.0}};
     drawCurve(c25[0], c25[1], c25[2], c25[3]);
 
-    // Referencia: Curva 2 de la oreja principal
+    // Reference: Curva 2 de la oreja principal
     float c26[4][3] = {
         {355.0, 550.0, 0.0},
         {460.0, 640.0, 0.0},
@@ -263,7 +263,7 @@ void CurvaBezier(void)
         {430.0, 750.0, 0.0}};
     drawCurve(c26[0], c26[1], c26[2], c26[3]);
 
-    // Referencia: Curva 1 interna de la oreja principal
+    // Reference: Curva 1 interna de la oreja principal
     float c27[4][3] = {
         {341.0, 555.0, 0.0},
         {443.0, 640.0, 0.0},
@@ -271,7 +271,7 @@ void CurvaBezier(void)
         {422.0, 730.0, 0.0}};
     drawCurve(c27[0], c27[1], c27[2], c27[3]);
 
-    // Referencia: Curva 2 interna de la oreja principal
+    // Reference: Curva 2 interna de la oreja principal
     float c28[4][3] = {
         {315.0, 575.0, 0.0},
         {293.0, 640.0, 0.0},
