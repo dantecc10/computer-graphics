@@ -101,7 +101,7 @@ void CurvaBezier(void)
         {530.0, 260.0, 0.0},
         {530.0, 325.0, 0.0},
         {585.0, 390.0, 0.0}};
-    drawCurve(c6[0], c6[1], c6[2], c6[3]);
+    drawCurve(c6[0], c6[1], c6[2], c6[3]); 
 
     // Reference_ Vientre del conejo
     float c7[4][3] = {
