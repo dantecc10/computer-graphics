@@ -54,8 +54,6 @@ void CurvaBezier(void)
     glColor3f(0, 0, 0);
     glLineWidth(3);
 
-    // Define los puntos de control (sólo se toca el primero y el último)
-
     // Referencia: Lomo del conejo
     float c1[4][3] = {
         {400.0, 600.0, 0.0},
