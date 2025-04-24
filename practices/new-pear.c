@@ -73,7 +73,8 @@ void desactiva_luz(void)
 	glDisable(GL_DEPTH_TEST);
 }
 
-void material(void){
+void material(void)
+{
 	GLfloat amb1[] = {0.23125, 0.23125, 0.23125, 1.0};
 	GLfloat amb2[] = {0.773911, 0.773911, 0.773911, 1.0};
 	GLfloat amb3[] = {0.2775, 0.2775, 0.2775, 1.0};
@@ -86,11 +87,11 @@ void material(void){
 	glEnable(GL_COLOR_MATERIAL);
 }
 
-	/*
-	Ilumina()
-	GLfloat ColorAmbiente[] = {1.0, 0.0, 0.0, 0.0};
-	*/
-void pera(void) 
+/*
+Ilumina()
+GLfloat ColorAmbiente[] = {1.0, 0.0, 0.0, 0.0};
+*/
+void pera(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glClear(GL_DEPTH_BUFFER_BIT);
@@ -99,18 +100,18 @@ void pera(void)
 	esfera1();
 	esfera2();
 	desactiva_luz();
-	tallo(); 
+	tallo();
 	glFlush();
-} 
+}
 
 int main(int argc, char **argv)
 {
-	glutInit(&argc, argv); 
+	glutInit(&argc, argv);
 	glutInitWindowSize(600, 600);
 	glutCreateWindow("Iluminación");
-	inicializa(); 
-	glutDisplayFunc(pera); 
-	
-	glutMainLoop(); 
+	inicializa();
+	glutDisplayFunc(pera);
+
+	glutMainLoop();
 	return 0;
 }
