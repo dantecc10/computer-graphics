@@ -26,9 +26,9 @@ void iDrawCurve(float p0[3], float p1[3], float p2[3], float p3[3], int fill, GL
 {
     glMap1f(GL_MAP1_VERTEX_3, 0.0, 1.0, 3, 4, &p0[0]);
     glEnable(GL_MAP1_VERTEX_3);
-    glLineWidth(3);     // Experimental
+    glLineWidth(3);
 
-    if (fill)
+    if (fill) // Check if fill is enabled
     {
         glColor3f(fillColor[0], fillColor[1], fillColor[2]); // Set custom fill color
         glBegin(GL_POLYGON);
@@ -48,7 +48,6 @@ void iDrawCurve(float p0[3], float p1[3], float p2[3], float p3[3], int fill, GL
     glEnd();
 }
 
-// FIn de código experimental
 void CurvaBezier(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -63,7 +62,7 @@ void CurvaBezier(void)
         {600.0, 615.0, 0.0},
         {715.0, 500.0, 0.0},
         {745.0, 420.0, 0.0}};
-    drawCurve(c1[0], c1[1], c1[2], c1[3]); // Display curve
+    drawCurve(c1[0], c1[1], c1[2], c1[3]);                                 // Display curve
     iDrawCurve(c1[0], c1[1], c1[2], c1[3], 1, (GLfloat[]){1.0, 0.0, 0.0}); // Display curve and optionally fill with custom color
 
     // Referencia: Cola del conejo
