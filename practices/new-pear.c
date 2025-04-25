@@ -110,6 +110,6 @@ int main(int argc, char **argv)
 	glutCreateWindow("Iluminación");
 	inicializa(); 
 	glutDisplayFunc(pera);
-	glutMainLoop();
+	glutMainLoop(); 
 	return 0;
 }
