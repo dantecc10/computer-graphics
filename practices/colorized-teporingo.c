@@ -92,6 +92,13 @@ void Conejo(void)
     polygon4Filler((float[4][3]){{205.0, 130.0, 0.0}, {160.0, 119.0, 0.0}, {162.0, 130.0, 0.0}, {175.0, 150.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Pata delantera secundaria alta
+    polygon4Filler((float[4][3]){{175.0, 150.0, 0.0}, {185.0, 233.0, 0.0}, {245.0, 198.0, 0.0}, {205.0, 130.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Pata delantera secundaria
+    polygon4Filler((float[4][3]){{255.0, 198.0, 0.0}, {250.0, 180.0, 0.0}, {215.0, 125.0, 0.0}, {308.0, 140.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Cabeza del conejo
+    // Reference: Orejas del conejo
 
     // Reference: Lomo del conejo
     float c1[4][3] = {
@@ -245,7 +252,7 @@ void Conejo(void)
         {178.0, 178.0, 0.0},
         {181.0, 206.0, 0.0},
         {185.0, 233.0, 0.0}};
-    //drawCurve(c18[0], c18[1], c18[2], c18[3]);
+    // drawCurve(c18[0], c18[1], c18[2], c18[3]);
     iDrawCurve(c18[0], c18[1], c18[2], c18[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Mandíbula del conejo 1
