@@ -79,15 +79,44 @@ void Conejo(void)
     // Pata delantera secundaria del conejo
     polygon3Filler((float[3][3]){{200.0, 300.0, 0.0}, {345.0, 310.0, 0.0}, {310.0, 365.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
+    // Reference: Relleno final de la pata delantera principal
+    polygon4Filler((float[4][3]){{150.0, 230.0, 0.0}, {250.0, 210.0, 0.0}, {380.0, 230.0, 0.0}, {270.0, 270.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno central de la pata delantera principal
+    polygon4Filler((float[4][3]){{270.0, 270.0, 0.0}, {380.0, 230.0, 0.0}, {530.0, 400.0, 0.0}, {360.0, 310.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno lomo1-vientre-vientre-cuello
+    polygon4Filler((float[4][3]){{600.0, 575.0, 0.0}, {662.0, 300.0, 0.0}, {455.0, 280.0, 0.0}, {360.0, 310.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno lomo1-vientre-vientre-cuello
+    polygon4Filler((float[4][3]){{600.0, 575.0, 0.0}, {360.0, 310.0, 0.0}, {290.0, 400.0, 0.0}, {400.0, 600.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno general de la parte trasera
+    polygon4Filler((float[4][3]){{600.0, 575.0, 0.0}, {840.0, 520.0, 0.0}, {840.0, 520.0, 0.0}, {600.0, 288.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno de la parte trasera
+    polygon4Filler((float[4][3]){{600.0, 288.0, 0.0}, {620.0, 360.0, 0.0}, {840.0, 520.0, 0.0}, {790.0, 250.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno de la parte trasera (sobre patas)
+    polygon4Filler((float[4][3]){{840.0, 520.0, 0.0}, {790.0, 250.0, 0.0}, {880.0, 375.0, 0.0}, {885.0, 335.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno de la parte trasera (sobre patas)
+    polygon4Filler((float[4][3]){{790.0, 250.0, 0.0}, {880.0, 375.0, 0.0}, {905.0, 230.0, 0.0}, {820.0, 205.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Relleno de la parte trasera
+    polygon3Filler((float[3][3]){{810.0, 200.0, 0.0},{905.0, 230.0, 0.0},{845.0, 115.0, 0.0}},(GLfloat[]){.3921, .2823, .1607});
+
+    /*
+    {880.0, 375.0, 0.0},
 
 
+    {905.0, 230.0, 0.0}};
+    -
+    -
 
-
-
-    
+    */
 
     // Reference: Cabeza del conejo
-
     // Reference: Mandíbula del conejo (pinta nariz)
     polygon4Filler((float[4][3]){{90.0, 480.0, 0.0}, {75.0, 450.0, 0.0}, {150.0, 390.0, 0.0}, {350.0, 440.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
@@ -315,8 +344,8 @@ void Conejo(void)
     // Reference: Curva del lomo del conejo
     float c2[4][3] = {
         {600.0, 575.0, 0.0},
-        {630.0, 545.0, 0.0},
-        {670.0, 545.0, 0.0},
+        {630.0, 553.0, 0.0},
+        {670.0, 552.0, 0.0},
         {700.0, 548.0, 0.0}};
     drawCurve(c2[0], c2[1], c2[2], c2[3]); // Display curve
 
@@ -382,7 +411,7 @@ void Conejo(void)
         {510.0, 344.0, 0.0},
         {480.0, 286.0, 0.0},
         {380.0, 230.0, 0.0}};
-    drawCurve(c10[0], c10[1], c10[2], c10[3]);
+    iDrawCurve(c10[0], c10[1], c10[2], c10[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Parte de la pata delantera principal
     float c11[4][3] = {
@@ -390,7 +419,7 @@ void Conejo(void)
         {337.0, 210.0, 0.0},
         {293.0, 200.0, 0.0},
         {250.0, 210.0, 0.0}};
-    drawCurve(c11[0], c11[1], c11[2], c11[3]);
+    iDrawCurve(c11[0], c11[1], c11[2], c11[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Previo a pata delantera principal
     float c12[4][3] = {
@@ -398,12 +427,12 @@ void Conejo(void)
         {370.0, 404.0, 0.0},
         {360.0, 346.0, 0.0},
         {360.0, 310.0, 0.0}};
-    drawCurve(c12[0], c12[1], c12[2], c12[3]);
+    iDrawCurve(c12[0], c12[1], c12[2], c12[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     float c13[4][3] = {
         {360.0, 310.0, 0.0},
-        {330.0, 290.0, 0.0},
-        {300.0, 265.0, 0.0},
+        {330.0, 300.0, 0.0},
+        {300.0, 280.0, 0.0},
         {270.0, 270.0, 0.0}};
     drawCurve(c13[0], c13[1], c13[2], c13[3]);
 
@@ -412,7 +441,7 @@ void Conejo(void)
         {230.0, 290.0, 0.0},
         {170.0, 290.0, 0.0},
         {150.0, 230.0, 0.0}};
-    drawCurve(c14[0], c14[1], c14[2], c14[3]);
+    iDrawCurve(c14[0], c14[1], c14[2], c14[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Parte de la pata delantera principal
     float c15[4][3] = {
@@ -420,7 +449,7 @@ void Conejo(void)
         {178.0, 210.0, 0.0},
         {217.0, 200.0, 0.0},
         {250.0, 210.0, 0.0}};
-    drawCurve(c15[0], c15[1], c15[2], c15[3]);
+    iDrawCurve(c15[0], c15[1], c15[2], c15[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Vientre del conejo
     float c16[4][3] = {
@@ -428,7 +457,7 @@ void Conejo(void)
         {540.0, 270.0, 0.0},
         {500.0, 270.0, 0.0},
         {455.0, 280.0, 0.0}};
-    drawCurve(c16[0], c16[1], c16[2], c16[3]);
+    iDrawCurve(c16[0], c16[1], c16[2], c16[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Cuello del conejo
     float c17[4][3] = {
@@ -436,7 +465,7 @@ void Conejo(void)
         {340.0, 290.0, 0.0},
         {310.0, 380.0, 0.0},
         {290.0, 400.0, 0.0}};
-    drawCurve(c17[0], c17[1], c17[2], c17[3]);
+    iDrawCurve(c17[0], c17[1], c17[2], c17[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Músculo de la pata trasera secundaria del conejo
     float c18[4][3] = {
@@ -444,7 +473,7 @@ void Conejo(void)
         {750.0, 220.0, 0.0},
         {640.0, 210.0, 0.0},
         {600.0, 288.0, 0.0}};
-    drawCurve(c18[0], c18[1], c18[2], c18[3]);
+    iDrawCurve(c18[0], c18[1], c18[2], c18[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Pata trasera secundaria
     float c40[4][3] = {
@@ -460,7 +489,7 @@ void Conejo(void)
         {805.0, 180.0, 0.0},
         {800.0, 160.0, 0.0},
         {830.0, 140.0, 0.0}};
-    drawCurve(c41[0], c41[1], c41[2], c41[3]);
+    iDrawCurve(c41[0], c41[1], c41[2], c41[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 
     // Reference: Pata delantera secundaria
     float c42[4][3] = {
