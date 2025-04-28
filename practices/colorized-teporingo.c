@@ -98,7 +98,30 @@ void Conejo(void)
     polygon4Filler((float[4][3]){{255.0, 198.0, 0.0}, {250.0, 180.0, 0.0}, {215.0, 125.0, 0.0}, {308.0, 140.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Cabeza del conejo
+
+    // Reference: Mandíbula del conejo (pinta nariz)
+    polygon4Filler((float[4][3]){{90.0, 480.0, 0.0}, {75.0, 450.0, 0.0}, {150.0, 390.0, 0.0}, {350.0, 440.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Cabeza central
+    polygon4Filler((float[4][3]){{90.0, 480.0, 0.0}, {150.0, 570.0, 0.0}, {300.0, 610.0, 0.0}, {350.0, 440.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Cabeza (bajo orejas)
+    polygon3Filler((float[3][3]){{400.0, 600.0, 0.0}, {300.0, 610.0, 0.0}, {350.0, 440.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
     // Reference: Orejas del conejo
+    polygon3Filler((float[3][3]){{400.0, 600.0, 0.0}, {430.0, 750.0, 0.0}, {288.0, 610.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    // Reference: Oreja secundaria del conejo
+    polygon4Filler((float[4][3]){{370.0, 735.0, 0.0}, {340.0, 780.0, 0.0}, {295.0, 705.0, 0.0}, {288.0, 610.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+    polygon3Filler((float[3][3]){{370.0, 735.0, 0.0}, {288.0, 610.0, 0.0}, {300.0, 610.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
+
+    polygon3Filler((float[3][3]){{422.0, 730.0, 0.0}, {341.0, 555.0, 0.0}, {315.0, 575.0, 0.0}}, (GLfloat[]){.5568, .5843, .7294});
+
+    // Reference: Ojo complemento a parte blanca
+    polygon4Filler((float[4][3]){{200.0, 530.0, 0.0}, {170.0, 510.0, 0.0}, {200.0, 490.0, 0.0}, {230.0, 510.0, 0.0}}, (GLfloat[]){1.0, 1.0, 1.0});
+
+    // Reference: Ojo complemento a retina
+    polygon4Filler((float[4][3]){{200.0, 530.0, 0.0}, {180.0, 510.0, 0.0}, {200.0, 490.0, 0.0}, {220.0, 510.0, 0.0}}, (GLfloat[]){0.0, 0.0, 0.0});
 
     // Reference: Lomo del conejo
     float c1[4][3] = {
@@ -261,7 +284,8 @@ void Conejo(void)
         {320.0, 400.0, 0.0},
         {220.0, 375.0, 0.0},
         {150.0, 390.0, 0.0}};
-    drawCurve(c19[0], c19[1], c19[2], c19[3]);
+    // drawCurve(c19[0], c19[1], c19[2], c19[3]);
+    iDrawCurve(c19[0], c19[1], c19[2], c19[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Mandíbula del conejo 2
     float c20[4][3] = {
@@ -269,7 +293,8 @@ void Conejo(void)
         {110.0, 400.0, 0.0},
         {95.0, 400.0, 0.0},
         {75.0, 450.0, 0.0}};
-    drawCurve(c20[0], c20[1], c20[2], c20[3]);
+    // drawCurve(c20[0], c20[1], c20[2], c20[3]);
+    iDrawCurve(c20[0], c20[1], c20[2], c20[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Nariz (externo)
     float c21[4][3] = {
@@ -277,7 +302,8 @@ void Conejo(void)
         {70.0, 460.0, 0.0},
         {80.0, 472.0, 0.0},
         {90.0, 480.0, 0.0}};
-    drawCurve(c21[0], c21[1], c21[2], c21[3]);
+    // drawCurve(c21[0], c21[1], c21[2], c21[3]);
+    iDrawCurve(c21[0], c21[1], c21[2], c21[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Nariz (interno)
     float c22[4][3] = {
@@ -301,7 +327,8 @@ void Conejo(void)
         {170.0, 600.0, 0.0},
         {250.0, 620.0, 0.0},
         {300.0, 610.0, 0.0}};
-    drawCurve(c24[0], c24[1], c24[2], c24[3]);
+    // drawCurve(c24[0], c24[1], c24[2], c24[3]);
+    iDrawCurve(c24[0], c24[1], c24[2], c24[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva 1 de la oreja principal
     float c25[4][3] = {
@@ -309,7 +336,8 @@ void Conejo(void)
         {280.0, 670.0, 0.0},
         {345.0, 740.0, 0.0},
         {430.0, 750.0, 0.0}};
-    drawCurve(c25[0], c25[1], c25[2], c25[3]);
+    // drawCurve(c25[0], c25[1], c25[2], c25[3]);
+    iDrawCurve(c25[0], c25[1], c25[2], c25[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva 2 de la oreja principal
     float c26[4][3] = {
@@ -317,7 +345,8 @@ void Conejo(void)
         {460.0, 640.0, 0.0},
         {435.0, 735.0, 0.0},
         {430.0, 750.0, 0.0}};
-    drawCurve(c26[0], c26[1], c26[2], c26[3]);
+    // drawCurve(c26[0], c26[1], c26[2], c26[3]);
+    iDrawCurve(c26[0], c26[1], c26[2], c26[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva 1 interna de la oreja principal
     float c27[4][3] = {
@@ -325,7 +354,8 @@ void Conejo(void)
         {443.0, 640.0, 0.0},
         {425.0, 735.0, 0.0},
         {422.0, 730.0, 0.0}};
-    drawCurve(c27[0], c27[1], c27[2], c27[3]);
+    // drawCurve(c27[0], c27[1], c27[2], c27[3]);
+    iDrawCurve(c27[0], c27[1], c27[2], c27[3], 1, (GLfloat[]){.5568, .5843, .7294});
 
     // Reference: Curva 2 interna de la oreja principal
     float c28[4][3] = {
@@ -333,7 +363,8 @@ void Conejo(void)
         {293.0, 640.0, 0.0},
         {335.0, 735.0, 0.0},
         {422.0, 730.0, 0.0}};
-    drawCurve(c28[0], c28[1], c28[2], c28[3]);
+    // drawCurve(c28[0], c28[1], c28[2], c28[3]);
+    iDrawCurve(c28[0], c28[1], c28[2], c28[3], 1, (GLfloat[]){.5568, .5843, .7294});
 
     // Reference: Curva 1 de la oreja secundaria
     float c29[4][3] = {
@@ -341,7 +372,8 @@ void Conejo(void)
         {355.0, 770.0, 0.0},
         {350.0, 770.0, 0.0},
         {340.0, 780.0, 0.0}};
-    drawCurve(c29[0], c29[1], c29[2], c29[3]);
+    // drawCurve(c29[0], c29[1], c29[2], c29[3]);
+    iDrawCurve(c29[0], c29[1], c29[2], c29[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Reference: Curva 2 de la oreja secundaria
     float c30[4][3] = {
@@ -349,47 +381,18 @@ void Conejo(void)
         {315.0, 770.0, 0.0},
         {324.0, 770.0, 0.0},
         {340.0, 780.0, 0.0}};
-    drawCurve(c30[0], c30[1], c30[2], c30[3]);
+    // drawCurve(c30[0], c30[1], c30[2], c30[3]);
+    iDrawCurve(c30[0], c30[1], c30[2], c30[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     float c31[4][3] = {
         {295.0, 705.0, 0.0},
         {285.0, 680.0, 0.0},
         {288.0, 630.0, 0.0},
         {288.0, 610.0, 0.0}};
-    drawCurve(c31[0], c31[1], c31[2], c31[3]);
+    // drawCurve(c31[0], c31[1], c31[2], c31[3]);
+    iDrawCurve(c31[0], c31[1], c31[2], c31[3], 1, (GLfloat[]){.3921, .2823, .1607});
 
     // Ojo (dividido entre 4 sectores curvos)
-    // Reference: Curva 1 de la pupila
-    float c32[4][3] = {
-        {200.0, 530.0, 0.0},
-        {210.0, 527.32, 0.0},
-        {217.32, 520.0, 0.0},
-        {220.0, 510.0, 0.0}};
-    drawCurve(c32[0], c32[1], c32[2], c32[3]);
-
-    // Reference: Curva 2 de la pupila
-    float c33[4][3] = {
-        {200.0, 530.0, 0.0},
-        {190.0, 527.32, 0.0},
-        {182.67, 520.0, 0.0},
-        {180.0, 510.0, 0.0}};
-    drawCurve(c33[0], c33[1], c33[2], c33[3]);
-
-    // Reference: Curva 3 de la pupila
-    float c34[4][3] = {
-        {180.0, 510.0, 0.0},
-        {182.67, 500.0, 0.0},
-        {190.0, 492.67, 0.0},
-        {200.0, 490.0, 0.0}};
-    drawCurve(c34[0], c34[1], c34[2], c34[3]);
-
-    // Reference: Curva 4 de la pupila
-    float c35[4][3] = {
-        {200.0, 490.0, 0.0},
-        {210.0, 492.67, 0.0},
-        {217.32, 500.0, 0.0},
-        {220.0, 510.0, 0.0}};
-    drawCurve(c35[0], c35[1], c35[2], c35[3]);
 
     // Reference: Ojo (parte blanca)
     float c36[4][3] = {
@@ -397,7 +400,8 @@ void Conejo(void)
         {210.0, 530.32, 0.0},
         {217.32, 525.0, 0.0},
         {230.0, 510.0, 0.0}};
-    drawCurve(c36[0], c36[1], c36[2], c36[3]);
+    // drawCurve(c36[0], c36[1], c36[2], c36[3]);
+    iDrawCurve(c36[0], c36[1], c36[2], c36[3], 1, (GLfloat[]){1.0, 1.0, 1.0});
 
     // Reference: Ojo (parte blanca)
     float c37[4][3] = {
@@ -405,7 +409,8 @@ void Conejo(void)
         {190.0, 530.32, 0.0},
         {182.67, 525.0, 0.0},
         {170.0, 510.0, 0.0}};
-    drawCurve(c37[0], c37[1], c37[2], c37[3]);
+    // drawCurve(c37[0], c37[1], c37[2], c37[3]);
+    iDrawCurve(c37[0], c37[1], c37[2], c37[3], 1, (GLfloat[]){1.0, 1.0, 1.0});
 
     // Reference: Ojo (parte blanca)
     float c38[4][3] = {
@@ -413,7 +418,8 @@ void Conejo(void)
         {210.0, 489.32, 0.0},
         {217.32, 495.0, 0.0},
         {230.0, 510.0, 0.0}};
-    drawCurve(c38[0], c38[1], c38[2], c38[3]);
+    // drawCurve(c38[0], c38[1], c38[2], c38[3]);
+    iDrawCurve(c38[0], c38[1], c38[2], c38[3], 1, (GLfloat[]){1.0, 1.0, 1.0});
 
     // Reference: Ojo (parte blanca)
     float c39[4][3] = {
@@ -421,7 +427,48 @@ void Conejo(void)
         {182.67, 495.0, 0.0},
         {190.0, 489.32, 0.0},
         {200.0, 490.0, 0.0}};
-    drawCurve(c39[0], c39[1], c39[2], c39[3]);
+    // drawCurve(c39[0], c39[1], c39[2], c39[3]);
+    iDrawCurve(c39[0], c39[1], c39[2], c39[3], 1, (GLfloat[]){1.0, 1.0, 1.0});
+
+    // Reference: Curva 1 de la pupila
+    float c32[4][3] = {
+        {200.0, 530.0, 0.0},
+        {210.0, 527.32, 0.0},
+        {217.32, 520.0, 0.0},
+        {220.0, 510.0, 0.0}};
+    // drawCurve(c32[0], c32[1], c32[2], c32[3]);
+    iDrawCurve(c32[0], c32[1], c32[2], c32[3], 1, (GLfloat[]){0.0, 0.0, 0.0});
+
+    // Reference: Curva 2 de la pupila
+    float c33[4][3] = {
+        {200.0, 530.0, 0.0},
+        {190.0, 527.32, 0.0},
+        {182.67, 520.0, 0.0},
+        {180.0, 510.0, 0.0}};
+    // drawCurve(c33[0], c33[1], c33[2], c33[3]);
+    iDrawCurve(c33[0], c33[1], c33[2], c33[3], 1, (GLfloat[]){0.0, 0.0, 0.0});
+
+    // Reference: Curva 3 de la pupila
+    float c34[4][3] = {
+        {180.0, 510.0, 0.0},
+        {182.67, 500.0, 0.0},
+        {190.0, 492.67, 0.0},
+        {200.0, 490.0, 0.0}};
+    // drawCurve(c34[0], c34[1], c34[2], c34[3]);
+    iDrawCurve(c34[0], c34[1], c34[2], c34[3], 1, (GLfloat[]){0.0, 0.0, 0.0});
+
+    // Reference: Curva 4 de la pupila
+    float c35[4][3] = {
+        {200.0, 490.0, 0.0},
+        {210.0, 492.67, 0.0},
+        {217.32, 500.0, 0.0},
+        {220.0, 510.0, 0.0}};
+    // drawCurve(c35[0], c35[1], c35[2], c35[3]);
+    iDrawCurve(c35[0], c35[1], c35[2], c35[3], 1, (GLfloat[]){0.0, 0.0, 0.0});
+
+    // Reference: Ojo pupila
+    polygon4Filler((float[4][3]){{195.0, 528.0, 0}, {199.0, 528.0, 0.0}, {199.0, 524.0, 0.0}, {195.0, 524.0, 0.0}}, (GLfloat[]){1.0, 1.0, 1.0});
+
     glFlush();
 }
 
