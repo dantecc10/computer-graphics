@@ -303,7 +303,7 @@ void Conejo(void)
         {80.0, 472.0, 0.0},
         {90.0, 480.0, 0.0}};
     // drawCurve(c21[0], c21[1], c21[2], c21[3]);
-    iDrawCurve(c21[0], c21[1], c21[2], c21[3], 1, (GLfloat[]){.3921, .2823, .1607});
+    iDrawCurve(c21[0], c21[1], c21[2], c21[3], 1, (GLfloat[]){0.9058, 0.7215, 0.6862});
 
     // Reference: Nariz (interno)
     float c22[4][3] = {
@@ -311,7 +311,7 @@ void Conejo(void)
         {85.0, 460.0, 0.0},
         {105.0, 470.0, 0.0},
         {90.0, 480.0, 0.0}};
-    drawCurve(c22[0], c22[1], c22[2], c22[3]);
+    iDrawCurve(c22[0], c22[1], c22[2], c22[3], 1, (GLfloat[]){0.9058, 0.7215, 0.6862});
 
     // Reference: Nariz a la cabeza
     float c23[4][3] = {
