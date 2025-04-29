@@ -50,7 +50,7 @@ void ilumina2(void)
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, difuseColor);
 
 	// Atenuación
-	glLightf(GL_LIGHT0, GL_CONSTANT_ATTENUATION, 1.0);
+	glLightf(GL_LIGHT0, GL_CONSTANT_ATTENUATION, .4);
 	glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 0.0);
 	glLightf(GL_LIGHT0, GL_QUADRATIC_ATTENUATION, 0.0);
 
