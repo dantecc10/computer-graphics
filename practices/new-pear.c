@@ -102,7 +102,7 @@ void pera(void)
 	tallo(); 
 	glFlush();
 } 
-
+ 
 int main(int argc, char **argv)
 {
 	glutInit(&argc, argv);
