@@ -1568,7 +1568,6 @@ void plato_bambu(void)
 }
 
 void bottle()
-
 {
     glColor3f(1, 0, 0);
     glBegin(GL_POLYGON);
