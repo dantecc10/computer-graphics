@@ -43,11 +43,26 @@ void ilumina2(void)
 	GLfloat positionAndType[] = {6, 6, 6, 2};
 	GLfloat environmentColor[] = {0, 0, 0, 0};
 	GLfloat difuseColor[] = {0, .9, 0};
-	GLfloat direcction[] = {0, 0, 1};
+	GLfloat direction[] = {0, 0, 1};
 
 	glLightfv(GL_LIGHT0, GL_POSITION, positionAndType);
 	glLightfv(GL_LIGHT0, GL_AMBIENT, environmentColor);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, difuseColor);
+
+	// Atenuación
+	glLightf(GL_LIGHT0, GL_CONSTANT_ATTENUATION, 1.0);
+	glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 0.0);
+	glLightf(GL_LIGHT0, GL_QUADRATIC_ATTENUATION, 0.0);
+
+	// Direcciones
+	glLightfv(GL_LIGHT1, GL_SPOT_DIRECTION, direction);
+	glLightf(GL_LIGHT1, GL_SPOT_CUTOFF, 10.0);
+	glLightf(GL_LIGHT1, GL_SPOT_EXPONENT, 20.0);
+
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+	glEnable(GL_LIGHT1);
+	glEnable(GL_DEPTH_TEST);
 }
 
 void pera(void)
@@ -57,6 +72,7 @@ void pera(void)
 	esfera1();
 	esfera2();
 	tallo();
+	ilumina2();
 	glFlush();
 }
 
