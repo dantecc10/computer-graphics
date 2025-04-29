@@ -65,14 +65,23 @@ void ilumina2(void)
 	glEnable(GL_DEPTH_TEST);
 }
 
+void desactiva_luz(void)
+{
+	glDisable(GL_LIGHT0);
+	glDisable(GL_LIGHT1);
+	glDisable(GL_LIGHTING);
+	glDisable(GL_DEPTH_TEST);
+}
+
 void pera(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glClear(GL_DEPTH_BUFFER_BIT);
+	ilumina2();
 	esfera1();
 	esfera2();
+	desactiva_luz();
 	tallo();
-	ilumina2();
 	glFlush();
 }
 
