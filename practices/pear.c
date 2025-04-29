@@ -19,7 +19,8 @@ void inicializa(void)
 	glPopMatrix();
 }*/
 
-void esfera1(void){
+void esfera1(void)
+{
 	glColor3f(77.0 / 255.0, 131.0 / 255.0, 22.0 / 255.0);
 	glPushMatrix();
 	glScalef(.8, 1, 1);
@@ -45,6 +46,18 @@ void tallo(void)
 	glTranslatef(0, .3, 0);
 	glutSolidSphere(.1, 40, 30);
 	glPopMatrix();
+}
+
+void ilumina2(void)
+{
+	GLfloat positionAndType[] = {6, 6, 6, 2};
+	GLfloat environmentColor[] = {0, 0, 0, 0};
+	GLfloat difuseColor[] = {0, .9, 0};
+	GLfloat direcction[] = {0, 0, 1};
+
+	glLightfv(GL_LIGHT0, GL_POSITION, positionAndType);
+	glLightfv(GL_LIGHT0, GL_AMBIENT, environmentColor);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, difuseColor);
 }
 
 void pera(void)
