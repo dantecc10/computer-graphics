@@ -36,8 +36,6 @@ void drawCircle(float cx, float cy, float radius, float color1, float color2, fl
         glVertex2f(x, y); // Añadir el punto al polígono
     }
     glEnd();
-
-    glFlush();
 }
 
 // Dibuja una curva de Bézier a partir de 4 puntos de control
@@ -103,7 +101,7 @@ void polygon3Filler(float points[3][3], GLfloat fillColor[3])
     glEnd();
 }
 
-void sitting_rabbit(void)
+void sitting_rabbit()
 {
     // glClear(GL_COLOR_BUFFER_BIT);
     //  Polígonos complementarios de relleno
@@ -504,9 +502,11 @@ void sitting_rabbit(void)
     glFlush();
 }
 
-void jumping_rabbit(void)
+void jumping_rabbit()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    // glClear(GL_COLOR_BUFFER_BIT);
+    //  Polígonos complementarios de relleno
+
     // Reference: Polígonos complementarios de relleno
 
     // Pata delantera secundaria del conejo
@@ -540,12 +540,6 @@ void jumping_rabbit(void)
     polygon3Filler((float[3][3]){{810.0, 200.0, 0.0}, {905.0, 230.0, 0.0}, {845.0, 115.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     /*
-    {880.0, 375.0, 0.0},
-
-
-    {905.0, 230.0, 0.0}};
-    -
-    -
 
     */
 
@@ -1560,14 +1554,15 @@ void bote()
 void plato_bambu(void)
 {
     float points[4][3] = {
-        {300.0, 250.0, 0.0},
-        {350.0, 140.0, 0.0},
-        {430.0, 140.0, 0.0},
-        {480.0, 250.0, 0.0}};
+        {400.0, 320.0, 0.0},
+        {420.0, 230.0, 0.0},
+        {560.0, 230.0, 0.0},
+        {580.0, 320.0, 0.0}};
     iDrawCurve(points[0], points[1], points[2], points[3], 1, (GLfloat[]){.3921, .2823, .1607}); // Display curve
 }
 
 void bottle()
+
 {
     glColor3f(1, 0, 0);
     glBegin(GL_POLYGON);
@@ -1592,9 +1587,8 @@ void bottle()
     glEnd();
 }
 
-void scene()
+void grass()
 {
-
     // Césped
     glColor3f(.0627, .4862, .2549);
     glPolygonMode(GL_FRONT, GL_FILL);
@@ -1604,40 +1598,10 @@ void scene()
     glVertex2i(600, 400);
     glVertex2i(300, 400);
     glEnd();
+}
 
-    // Tierra
-    glColor3f(.8156, .6, .3490);
-    glPolygonMode(GL_FRONT, GL_FILL);
-    glBegin(GL_POLYGON);
-    glVertex2i(0, 0);
-    glVertex2i(300, 0);
-    glVertex2i(300, 400);
-    glVertex2i(0, 400);
-    glEnd();
-
-    mount();
-
-    // bote();
-
-    // rabbit();
-    //  Raya
-    glColor3f(0, 0, 0);
-    glPolygonMode(GL_FRONT, GL_FILL);
-    glBegin(GL_POLYGON);
-    glVertex2i(302, 0);
-    glVertex2i(302, 800);
-    glVertex2i(298, 800);
-    glVertex2i(298, 0);
-    glEnd();
-
-    skull();
-
-    tree();
-
-    bottle();
-
-    drawCircle(600, 800, 100, 1, .6588, .0313);
-
+void cigarette()
+{
     // Cigarro
     glColor3f(1.0, 0.65, 0.0);
     glPolygonMode(GL_FRONT, GL_FILL);
@@ -1692,32 +1656,196 @@ void smoke()
     }
     glEnd();
 }
+
+void land()
+{
+    // Tierra
+    glColor3f(.8156, .6, .3490);
+    glPolygonMode(GL_FRONT, GL_FILL);
+    glBegin(GL_POLYGON);
+    glVertex2i(0, 0);
+    glVertex2i(300, 0);
+    glVertex2i(300, 400);
+    glVertex2i(0, 400);
+    glEnd();
+}
+
+void axis()
+{
+    //  Raya
+    glColor3f(0, 0, 0);
+    glPolygonMode(GL_FRONT, GL_FILL);
+    glBegin(GL_POLYGON);
+    glVertex2i(302, 0);
+    glVertex2i(302, 800);
+    glVertex2i(298, 800);
+    glVertex2i(298, 0);
+    glEnd();
+}
+
+void sun()
+{
+    float points[4][3] = {
+        {500.0, 800.0, 0.0},
+        {513.397, 750.0, 0.0},
+        {550.0, 713.397, 0.0},
+        {600.0, 700.0, 0.0}};
+    iDrawCurve(points[0], points[1], points[2], points[3], 1, (GLfloat[]){1.0, .7686, 0.0}); // Display curve
+
+    float points2[3][3] = {
+        {500.0, 800.0, 0.0},
+        {600.0, 700.0, 0.0},
+        {600.0, 800.0, 0.0}};
+    polygon3Filler((float[3][3]){{500.0, 800.0, 0.0}, {600.0, 700.0, 0.0}, {600.0, 800.0, 0.0}}, (GLfloat[]){1.0, .7686, 0.0});
+}
+
+void scene()
+{
+    grass();
+    land();
+    mount();
+    skull();
+    tree();
+    bottle();
+    cigarette();
+    glPushMatrix();
+    glTranslatef(0, 0, 0);
+    glScalef(-1, 1, 0);
+    smoke();
+    glPopMatrix();
+    // bote();
+    //plato_bambu();
+    sun();
+    axis();
+}
+
 void pinta(void)
 {
-    int frame = 0, offset_x = 450, offset_y = 40;
+    int frame = 0, offset_x = 400, offset_y = 80;
 
     while (frame < 30)
     {
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Limpia la pantalla
         scene();
-
-        if (frame < 5)
+        if (frame % 2)
         {
-            offset_x -= frame * 15;
+            glPushMatrix();
+            glTranslatef(240, 200, 0);
+            glScalef(.5, .5, 0);
+            bote();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(240, 200, 0);
+            glScalef(.5, .5, 0);
+            plato_bambu();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(210, 0.0, 0.0);
+            glScalef(-1, 1, 0);
+            smoke();
+            glPopMatrix();
+
+            glPushMatrix();
+            glTranslatef(210, 200.0, 0.0);
+            glScalef(-1, 1, 0);
+            smoke();
+            glPopMatrix();
+        }
+        else
+        {
+            bote();
+            plato_bambu();
+            smoke();
+            glPushMatrix();
+            glTranslatef(0, 100.0, 0.0);
+            glScalef(1, 1, 0);
+            smoke();
+            glPopMatrix();
+        }
+
+        if (frame < 6)
+        {
+            switch (frame)
+            {
+            case 0:
+                offset_x -= 15;
+                break;
+            case 1:
+                offset_x -= 15;
+                offset_y += 15;
+                break;
+            case 2:
+                offset_x -= 15;
+                offset_y -= 15;
+                break;
+            case 3:
+                offset_x -= 15;
+                break;
+            case 4:
+                offset_x -= 15;
+                offset_y += 15;
+                break;
+            case 5:
+                offset_x -= 15;
+                offset_y -= 15;
+                break;
+            default:
+                break;
+            }
+
             glPushMatrix();
             glTranslatef(offset_x, offset_y, 0);
             glScalef(.35, .35, 0);
             sitting_rabbit();
             glPopMatrix();
         }
-        else if (frame < 10)
+        else if (frame < 11)
         {
-            offset_x -= 5;
-            offset_y += 10;
+            switch (frame)
+            {
+            case 6: // Reference: El conejo comienza su salto (1/5)
+                offset_x -= 25;
+                offset_y += 35;
+                break;
+            case 7: // Reference: El conejo sigue ascendiendo
+                offset_x -= 25;
+                offset_y += 35;
+                break;
+            case 8: // Reference: El conejo alcanza su punto más alto
+                offset_x -= 25;
+                offset_y += 35;
+                break;
+            case 9: // Reference: El conejo comienza a caer
+                offset_x -= 25;
+                offset_y -= 35;
+                break;
+            case 10: // Reference: El conejo cae
+                offset_x -= 25;
+                offset_y -= 35;
+                break;
+            default:
+                break;
+            }
+
             glPushMatrix();
-            glTranslatef(offset_x, offset_y, 0);
+
+            switch (frame)
+            {
+            case 9:
+                glRotatef(15, 0, 0, 1);
+                break;
+            case 10:
+                glRotatef(30, 0, 0, 1);
+                break;
+
+            default:
+                break;
+            }
             glScalef(.35, .35, 0);
+            glTranslatef(offset_x, offset_y, 0);
             jumping_rabbit();
             glPopMatrix();
         }
@@ -1733,10 +1861,13 @@ void pinta(void)
         else if (frame < 30)
         {
         }
+        (frame == 12) ? frame = 0 : frame++;
+        (offset_x <= -100) ? offset_x = 400 : offset_x;
+        (offset_y >= 200) ? offset_y = 80 : offset_y;
 
-        (frame == 30) ? frame = 0 : frame++;
+        //(frame == 30) ? frame = 0 : frame++;
         glFlush();
-        usleep(2000000);
+        usleep(200000);
     }
 }
 

@@ -36,8 +36,6 @@ void drawCircle(float cx, float cy, float radius, float color1, float color2, fl
         glVertex2f(x, y); // Añadir el punto al polígono
     }
     glEnd();
-
-    glFlush();
 }
 
 // Dibuja una curva de Bézier a partir de 4 puntos de control
@@ -103,7 +101,7 @@ void polygon3Filler(float points[3][3], GLfloat fillColor[3])
     glEnd();
 }
 
-void sitting_rabbit(void)
+void sitting_rabbit()
 {
     // glClear(GL_COLOR_BUFFER_BIT);
     //  Polígonos complementarios de relleno
@@ -504,7 +502,7 @@ void sitting_rabbit(void)
     glFlush();
 }
 
-void jumping_rabbit(void)
+void jumping_rabbit()
 {
     glClear(GL_COLOR_BUFFER_BIT);
     // Reference: Polígonos complementarios de relleno
@@ -540,12 +538,6 @@ void jumping_rabbit(void)
     polygon3Filler((float[3][3]){{810.0, 200.0, 0.0}, {905.0, 230.0, 0.0}, {845.0, 115.0, 0.0}}, (GLfloat[]){.3921, .2823, .1607});
 
     /*
-    {880.0, 375.0, 0.0},
-
-
-    {905.0, 230.0, 0.0}};
-    -
-    -
 
     */
 
@@ -1593,9 +1585,8 @@ void bottle()
     glEnd();
 }
 
-void scene()
+void grass()
 {
-
     // Césped
     glColor3f(.0627, .4862, .2549);
     glPolygonMode(GL_FRONT, GL_FILL);
@@ -1605,40 +1596,10 @@ void scene()
     glVertex2i(600, 400);
     glVertex2i(300, 400);
     glEnd();
+}
 
-    // Tierra
-    glColor3f(.8156, .6, .3490);
-    glPolygonMode(GL_FRONT, GL_FILL);
-    glBegin(GL_POLYGON);
-    glVertex2i(0, 0);
-    glVertex2i(300, 0);
-    glVertex2i(300, 400);
-    glVertex2i(0, 400);
-    glEnd();
-
-    mount();
-
-    // bote();
-
-    // rabbit();
-    //  Raya
-    glColor3f(0, 0, 0);
-    glPolygonMode(GL_FRONT, GL_FILL);
-    glBegin(GL_POLYGON);
-    glVertex2i(302, 0);
-    glVertex2i(302, 800);
-    glVertex2i(298, 800);
-    glVertex2i(298, 0);
-    glEnd();
-
-    skull();
-
-    tree();
-
-    bottle();
-
-    drawCircle(600, 800, 100, 1, .6588, .0313);
-
+void cigarette()
+{
     // Cigarro
     glColor3f(1.0, 0.65, 0.0);
     glPolygonMode(GL_FRONT, GL_FILL);
@@ -1693,6 +1654,62 @@ void smoke()
     }
     glEnd();
 }
+
+void land()
+{
+    // Tierra
+    glColor3f(.8156, .6, .3490);
+    glPolygonMode(GL_FRONT, GL_FILL);
+    glBegin(GL_POLYGON);
+    glVertex2i(0, 0);
+    glVertex2i(300, 0);
+    glVertex2i(300, 400);
+    glVertex2i(0, 400);
+    glEnd();
+}
+
+void axis()
+{
+    //  Raya
+    glColor3f(0, 0, 0);
+    glPolygonMode(GL_FRONT, GL_FILL);
+    glBegin(GL_POLYGON);
+    glVertex2i(302, 0);
+    glVertex2i(302, 800);
+    glVertex2i(298, 800);
+    glVertex2i(298, 0);
+    glEnd();
+}
+
+void sun()
+{
+    float points[4][3] = {
+        {500.0, 800.0, 0.0},
+        {513.397, 750.0, 0.0},
+        {550.0, 713.397, 0.0},
+        {600.0, 700.0, 0.0}};
+    iDrawCurve(points[0], points[1], points[2], points[3], 1, (GLfloat[]){1.0, .7686, 0.0}); // Display curve
+
+    float points2[3][3] = {
+        {500.0, 800.0, 0.0},
+        {600.0, 700.0, 0.0},
+        {600.0, 800.0, 0.0}};
+    polygon3Filler((float[3][3]){{500.0, 800.0, 0.0}, {600.0, 700.0, 0.0}, {600.0, 800.0, 0.0}}, (GLfloat[]){1.0, .7686, 0.0});
+}
+
+void scene()
+{
+    grass();
+    land();
+    axis();
+    mount();
+    skull();
+    tree();
+    bottle();
+    sun();
+    cigarette();
+}
+
 void pinta(void)
 {
     int frame = 0, offset_x = 450, offset_y = 40;
