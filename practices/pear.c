@@ -9,16 +9,6 @@ void inicializa(void)
 	gluPerspective(35, 1, 1, 20);
 }
 
-/*void esfera1(void)
-{
-	glColor3f(77.0 / 255.0, 131.0 / 255.0, 22.0 / 255.0);
-	glPushMatrix();
-	glScalef(0.9, 1, 1);
-	glTranslatef(0, -0.5, 0);
-	glutSolidSphere(0.4, 40, 30);
-	glPopMatrix();
-}*/
-
 void esfera1(void)
 {
 	glColor3f(77.0 / 255.0, 131.0 / 255.0, 22.0 / 255.0);
