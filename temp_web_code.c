@@ -40,7 +40,7 @@ void tallo(void)
 
 void ilumina2(void)
 {
-	GLfloat positionAndType[] = {1, 1, 1, 4};
+	GLfloat positionAndType[] = {6, 6, 6, 2};
 	GLfloat environmentColor[] = {0, 0, 0, 0};
 	GLfloat difuseColor[] = {0, .9, 0};
 	GLfloat direction[] = {0, 0, 1};
