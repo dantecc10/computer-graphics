@@ -99,7 +99,7 @@ void pera(void)
 	esfera1();
 	esfera2();
 	desactiva_luz();
-	tallo();
+	tallo(); 
 	glFlush();
 } 
 
