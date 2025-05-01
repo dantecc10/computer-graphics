@@ -101,7 +101,7 @@ void pera(void)
 	desactiva_luz();
 	tallo();
 	glFlush();
-}
+} 
 
 int main(int argc, char **argv)
 {
