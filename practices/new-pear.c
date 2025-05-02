@@ -90,7 +90,7 @@ void material(void){
 	Ilumina()
 	GLfloat ColorAmbiente[] = {1.0, 0.0, 0.0, 0.0};
 	*/
-void pera(void)
+void pera(void) 
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glClear(GL_DEPTH_BUFFER_BIT);
