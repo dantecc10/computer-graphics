@@ -100,7 +100,7 @@ void pera(void)
 	esfera2();
 	desactiva_luz();
 	tallo();
-	glFlush(); 
+	glFlush();
 }
 
 int main(int argc, char **argv)
