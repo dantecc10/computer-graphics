@@ -73,11 +73,29 @@ void desactiva_luz(void)
 	glDisable(GL_DEPTH_TEST);
 }
 
+void material(void){
+	GLfloat amb1[] = {0.23125, 0.23125, 0.23125, 1.0};
+	GLfloat amb2[] = {0.773911, 0.773911, 0.773911, 1.0};
+	GLfloat amb3[] = {0.2775, 0.2775, 0.2775, 1.0};
+
+	glMaterialfv(GL_FRONT, GL_AMBIENT, amb1);
+	glMaterialfv(GL_FRONT, GL_SPECULAR, amb2);
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, amb3);
+	glMaterialf(GL_FRONT, GL_SHININESS, 89.6);
+
+	glEnable(GL_COLOR_MATERIAL);
+}
+
+	/*
+	Ilumina()
+	GLfloat ColorAmbiente[] = {1.0, 0.0, 0.0, 0.0};
+	*/
 void pera(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glClear(GL_DEPTH_BUFFER_BIT);
 	ilumina2();
+	material();
 	esfera1();
 	esfera2();
 	desactiva_luz();
