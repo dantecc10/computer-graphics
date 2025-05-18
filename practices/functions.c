@@ -26,7 +26,7 @@ void graficafuncion2dSubventana(void) {
         xi[i] = ci + i * dx;
         // Función a evaluar
         // yi[i] = xi[i] * (log(xi[i]) / log(2));
-        // yi[i] = pow(xi[i], 3);
+        // yi[i] = pow(xi[i], 2);
         // yi[i] = pow(.5, xi[i]);
         yi[i] = cos(xi[i]);
         // yi[i] = exp(xi[i]);

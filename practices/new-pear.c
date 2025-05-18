@@ -99,6 +99,7 @@ void pera(void)
 	material();
 	esfera1();
 	esfera2();
+	glDisable(GL_COLOR_MATERIAL);
 	desactiva_luz();
 	tallo();
 	glFlush();
